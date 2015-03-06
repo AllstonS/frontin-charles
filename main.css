@@ -1,6 +1,6 @@
 *
 body {
-  background-image: url("images/skyline.jpg");
+  background: linear-gradient(rgba(48, 67, 77, 0.74), rgba(48, 67, 77, 0.74)), url("images/skyline.jpg") !important;
   background-position: 100%; }
 
 .navbar-inner {
@@ -9,6 +9,9 @@ body {
   display: inline-block;
   zoom: 1;
   vertical-align: center; }
+
+h2 {
+  text-align: center; }
 
 .box {
   border: thin solid black;
