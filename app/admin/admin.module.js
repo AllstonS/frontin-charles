@@ -1,8 +1,9 @@
 (function () {
   "use strict";
 
-  angular.module('frontin', [
-  'ngRoute'
+  angular.module('admin', [
+  'ngRoute',
+  'ngAnimate'
   ])
   .config(function ($routeProvider) {
     $routeProvider

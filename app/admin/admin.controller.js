@@ -11,6 +11,7 @@
 
       CompanyService.getSingleCompany($routeParams.companyId).success(function(data){
         adminCtrl.singleCompany = data;
+        console.log(data);
       });
 
 //add new company
@@ -24,7 +25,7 @@
     };
 
 //edit company
-    adminCtrl.editCompany = function (id) {
+    adminCtrl.editCompany = function (company) {
       CompanyService.editCompany (company, company._id); //or $routeParams.companyId?
     };
 //Routing?? see Brent's work
