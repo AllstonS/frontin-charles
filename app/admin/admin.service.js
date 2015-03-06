@@ -9,7 +9,7 @@
         return $http.get(url);
       };
 
-      var getSingleCompany = function () {
+      var getSingleCompany = function (id) {
         return $http.get(url + '/' + id);
       };
 
@@ -20,7 +20,10 @@
       };
 
       var deleteCompany = function (id) {
-        $http.delete(url + '/' + id)
+        $http.delete(url + '/' + id).success(function(){
+          $location.path('/admincompanies')
+        });
+
       };
 
       var editCompany = function (company, id) {

@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="assets/css/compiled.css">
+<!--   <link rel="stylesheet" href="assets/css/compiled.css"> -->
   <title>Charleston on the Front</title>
 </head>
 <body ng-App="frontin">
-  <ng-view></ng-view>
+  <div ng-view>
 
+  </div>
 
 <!---SCRIPTS -->
 <script src="assets/bower_components/underscore/underscore.js"></script>
@@ -26,6 +27,8 @@
 
 
 <!-- ADMIN SCRIPTS -->
+<script src="app.js"></script>
+<script src="controller.js"></script>
 <script src ="admin/admin.module.js"></script>
 <script src ="admin/admin.controller.js"></script>
 <script src ="admin/admin.service.js"></script>
