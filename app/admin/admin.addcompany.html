@@ -1,0 +1,34 @@
+<div class="routeLinks">
+  <a href="#/admincompanies"><span class="fa-lg">    <!-- <i ng-click="adminCtrl.goToProducts()" class="fa fa-2x fa-arrow-left"></i>   -->
+    <i class="fa fa-arrow-left"></i>
+  </span>Back to List</a>
+</div>
+
+<div class="container addCompany">
+
+  <h3>Add a new company</h3>
+
+  <form ng-submit="adminCtrl.addCompany(newCompany)">
+    <input type="text" ng-model="newCompany.logo" placeholder="img Url">
+    <input type="text" ng-model="newCompany.name" placeholder="Company Name">
+    <input type="text" ng-model="newCompany.address1" placeholder="Street Address 1">
+    <input type="text" ng-model="newCompany.address2" placeholder="Street Address 2">
+    <input type="text" ng-model="newCompany.city" placeholder="City">
+    <input type="text" ng-model="newCompany.zip" placeholder="ZIP">
+    <input type="text" ng-model="newCompany.email" placeholder="e-mail address">
+    <input type="text" ng-model="newCompany.phone" placeholder="Phone">
+    <input type="text" ng-model="newCompany.twitter" placeholder="Twitter">
+    <input type="text" ng-model="newCompany.website" placeholder="Website Url">
+    <input type="text" ng-model="newCompany.careersSite" placeholder="Careers Site Url">
+    <textarea type="text" ng-model="newCompany.descrLong" placeholder="Company profile - long"></textarea>
+    <textarea type="text" ng-model="newCompany.descrShort" placeholder="Company profile - short"></textarea>
+    <textarea type="text" ng-model="newCompany.clients" placeholder="Company clients"></textarea>
+    <input type="text" ng-model="newCompany.hiring" placeholder="Hiring?"> <!-- options: front, back, full -->
+    <input type="text" ng-model="newCompany.approved" placeholder="Approved?"> <!-- y or n -->
+
+
+    <button type="submit">Add Product</button>
+    <!-- or   <a href="" class="btn-login" ng-click="adminCtrl.addNewProduct(newProduct)">Add product</a> -->
+  </form>
+
+</div>
