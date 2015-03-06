@@ -1,0 +1,34 @@
+<div class="routeLinks">
+  <a href="#/admincompanies"><span class="fa-lg">    <!-- <i ng-click="adminCtrl.goToProducts()" class="fa fa-2x fa-arrow-left"></i>   -->
+    <i class="fa fa-arrow-left"></i>
+  </span>Back to List</a>
+</div>
+
+<div class="container editCompany">
+
+  <h3>Currently editing {{adminCtrl.singleCompany.name}}</h3>
+
+  <form ng-submit="adminCtrl.editProduct(adminCtrl.singleItem)">
+
+    <p><span>Logo Url: </span><input type="text" ng-model="adminCtrl.singleCompany.logo"  value="{{adminCtrl.singleCompany.logo}}"></p>
+    <p><span>Company Name: </span><input type="text" ng-model="adminCtrl.singleCompany.name"  value="{{adminCtrl.singleCompany.name}}"></p>
+    <p><span>Street Address 1: </span><input type="text" ng-model="adminCtrl.singleCompany.address1"  value="{{adminCtrl.singleCompany.address1}}"></p>
+    <p><span>Street Address 2:</span><input type="text" ng-model="adminCtrl.singleCompany.address2"  value="{{adminCtrl.singleCompany.address2}}"></p>
+    <p><span>City: </span><input type="text" ng-model="adminCtrl.singleCompany.city" value="{{adminCtrl.singleCompany.city}}"></p>
+    <p><span>Zip: </span><input type="text" ng-model="adminCtrl.singleCompany.zip"  value="{{adminCtrl.singleCompany.zip}}"></p>
+    <p><span>Email: </span><input type="text" ng-model="adminCtrl.singleCompany.email" value="{{adminCtrl.singleCompany.email}}"></p>
+    <p><span>Phone: </span><input type="text" ng-model="adminCtrl.singleCompany.phone"  value="{{adminCtrl.singleCompany.phone}}"></p>
+    <p><span>Twitter: </span><input type="text" ng-model="adminCtrl.singleCompany.twitter"  value="{{adminCtrl.singleCompany.twitter}}"></p>
+    <p><span>Website Url: </span><input type="text" ng-model="adminCtrl.singleCompany.website"  value="{{adminCtrl.singleCompany.website}}"></p>
+    <p><span>Careersite Url: </span><input type="text" ng-model="adminCtrl.singleCompany.careersSite" value="{{adminCtrl.singleCompany.careersSite}}"></p>
+
+    <p><span>Description-Long: </span><textarea type="text" ng-model="adminCtrl.singleCompany.descrLong"  value="{{adminCtrl.singleCompany.descrLong}}"></textarea></p>
+    <p><span>Description-Short: </span><textarea type="text" ng-model="adminCtrl.singleCompany.descrShort"  value="{{adminCtrl.singleCompany.descrShort}}"></textarea></p>
+    <p><span>Clients: </span><textarea type="text" ng-model="adminCtrl.singleCompany.clients"  value="{{adminCtrl.singleCompany.clients}}"></textarea></p>
+    <p><span>Hiring: </span><input type="text" ng-model="adminCtrl.singleCompany.hiring"  value="{{adminCtrl.singleCompany.hiring}}"></p> <!-- options: front, back, full -->
+    <p><span>Approved: </span><input type="text" ng-model="adminCtrl.singleCompany.approved" value="{{adminCtrl.singleCompany.approved}}"></p>
+
+    <button type="submit">Update Company</button>
+  </form>
+
+</div>
