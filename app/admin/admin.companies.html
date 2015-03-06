@@ -2,7 +2,7 @@
   <a href="#/"><span class="fa-lg">
     <i class="fa fa-home"></i>
   </span>Home</a>
-  <a href="#/admin/addproduct"><span class="fa-lg">
+  <a href="#/addcompany"><span class="fa-lg">
     <i class="fa fa-plus"></i>
   </span>Add Company</a>
 </div>
@@ -12,52 +12,124 @@
     <input ng-model="query" type="text" name="searchbox" placeholder="filter companies">
   </div>
 
-  <table class ="company-table">  <!--check re vertical table arrangement-->
+  <table class ="company-table">
     <thead>
-      <th>Logo Url</th>
-      <th>Name</th>
-      <th>Street Address 1</th>
-      <th>Street Address 2</th>
-      <th>City</th>
-      <th>ZIP</th>
-      <th>E-mail</th>
-      <th>Phone</th>
-      <th>Twitter</th>
-      <th>Website</th>
-      <th>Careers Site</th>
-      <th>Long descr.</th>
-      <th>Short descr.</th>
-      <th>Clients</th>
-      <th>Hiring</th> <!-- options front, back, full -->
-      <th>Approved: y/n</th>
-      <th>Actions</th>
+
+      <tr>
+        <th>Logo</th>
+        <th>Name</th>
+        <th>Street Address 1</th>
+        <th>Street Address 2</th>
+        <th>City</th>
+        <th>ZIP</th>
+        <th>Phone</th>
+        <th>Website</th>
+        <th>View More / Edit</th>
+      </tr>
     </thead>
     <tbody>
       <tr class=table-item ng-repeat="company in adminCtrl.companies | filter:query as results">
+
         <td class="logo"><img data-ng-src={{company.logo}}/></td>
         <td class="name">{{company.name}}</td>
         <td class="address1">{{company.address1}}</td>
         <td class="address2">{{company.address2}}</td>
         <td class="city">{{company.city}}</td>
         <td class="zip">{{company.zip}}</td>
-        <td class="email">{{company.email}}</td>
         <td class="phone">{{company.phone}}</td>
-        <td class="twitter">{{company.twitter}}</td>
         <td class="website">{{company.website}}</td>
-        <td class="careersSite">{{company.careers}}</td>
-        <td class="descrLong">{{company.descrLong}}</td>
-        <td class="descrShort">{{company.descrShort}}</td>
-        <td class="clients">{{company.clients}}</td>
-        <td class="hiring">{{company.hiring}}</td> <!-- options front, back, full -->
-        <td class="Approved">{{company.approved}}</td> <!--y/n -->
         <td>
-          <i ng-click="adminCtrl.goToEditCompany(company._id)" class="fa fa-2x fa-pencil"></i>   <!-- check my buttons -->
+          <a href="#/edit/{{company._id}}">View More / Edit</a>
+        <!--   <i ng-click="adminCtrl.goToEditCompany(company._id)" class="fa fa-2x fa-pencil"></i> -->
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+<!--
+    <thead>
+      <tr>
+        <th></th>
+        <th scope="col">{{company.name}}</th>
+      </tr>
+    </thead>
+
+    <tbody>
+    NEED TO REPEAT BY COLUMN, NOT ROW <tr class=table-item ng-repeat="company in adminCtrl.companies | filter:query as results">
+      <tr>
+        <th scope="row">Logo Url</th>
+        <td class="logo"><img data-ng-src={{company.logo}}/></td>
+      </tr>
+      <tr>
+        <th scope="row">Name</th>
+        <td class="name">{{company.name}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Street Address 1</th>
+        <td class="address1">{{company.address1}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Street Address 2</th>
+        <td class="address2">{{company.address2}}</td>
+      </tr>
+      <tr>
+        <th scope="row">City</th>
+        <td class="city">{{company.city}}</td>
+      </tr>
+      <tr>
+        <th scope="row">ZIP</th>
+        <td class="zip">{{company.zip}}</td>
+      </tr>
+      <tr>
+        <th scope="row">E-mail</th>
+        <td class="email">{{company.email}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Phone</th>
+        <td class="phone">{{company.phone}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Twitter</th>
+        <td class="twitter">{{company.twitter}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Website</th>
+        <td class="website">{{company.website}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Careers Site</th>
+        <td class="careersSite">{{company.careers}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Long descr.</th>
+        <td class="descrLong">{{company.descrLong}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Short descr.</th>
+        <td class="descrShort">{{company.descrShort}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Clients</th>
+        <td class="clients">{{company.clients}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Hiring</th>
+        <td class="hiring">{{company.hiring}}</td> options front, back, full
+      </tr>
+      <tr>
+        <th scope="row">Approved:</th>
+        <td class="Approved">{{company.approved}}</td> y/n
+      </tr>
+      <tr>
+        <th scope="row">Actions</th>
+        <td>
+          <i ng-click="adminCtrl.goToEditCompany(company._id)" class="fa fa-2x fa-pencil"></i>   check my buttons
           <i ng-click="adminCtrl.deleteCompany(company._id)" class="fa fa-2x fa-close"></i>
         </td>
       </tr>
 
-    </tbody>
-
-  </table>
-
-</div>
+    </tbody> -->
