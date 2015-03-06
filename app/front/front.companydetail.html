@@ -1,17 +1,31 @@
-<header>
-  <img class="pageLogo" src="" alt="">
-  <a href="#/"><button class="btn navBtn btn-danger">Home</button></a>
-  <a href="#/"><button class="btn navBtn btn-danger">Companies</button></a>
-  <a href="#/"><button class="btn navBtn btn-danger"></button></a>
-  <a href="#/"><button class="btn navBtn btn-danger">Events</button></a>
-</header>
+<div class="left">
+    <div class="whiteBox">
+        <img src="http://fillmurray.com/200/200" alt="">
+        <h1 class="logo">Charlestonworks</h1>
+        <h2 class="slogan">Connecting You to Charleston's Thriving Tech Economy</h2>
+        <div class="views">
+            <button class="gridView">grid view</button>
+            <button class="mapView">map view</button>
+        </div>
+    </div>
+    <div class="blackBox">
+        <h3 class="filters">filters</h3>
+        <a href="" class="software">software</a>
+        <a href="" class="hiring">hiring</a>
+        <a href="" class="about">about this site</a>
+    </div>
+    <div class="footer">
+        <p>copyright blah blah</p>
+    </div>
+</div>
 
-<div class="">
-  <span class="xBtn"><a href="#/"><button class="btn btn-success"><i class="fa fa-times"></i></button></a></span>
-  <h2>{{title}}</h2>
-  <h4>Company:</h4>
-  <p>{{company}}</p>
-  <img src="{{logo}}" alt="">
-  <h4>Description:</h4>
-  <p>{{description}}</p>
+<div class="wrapperDetail">
+    <h1 class="companyDetail">{{mainCtrl.singleCompany.name}}</h1>
+    <img ng-src="{{mainCtrl.singleCompany.logo}}" alt="mainCtrl.singleCompany.name">
+    <h2 class="infoDetail">{{mainCtrl.singleCompany.street}} </h2>
+    <h2 class="infoDetail">{{mainCtrl.singleCompany.city}} </h2>
+    <h2 class="infoDetail">{{mainCtrl.singleCompany.phone}} </h2>
+    <p class="infoDescription">{{mainCtrl.singleCompany.description}} </p>
+    <a class="website" href="{{mainCtrl.singleCompany.website}}">website</a>
+    <div class="mapp">map goes here</div>
 </div>
