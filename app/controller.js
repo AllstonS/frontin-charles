@@ -6,7 +6,10 @@
     var mainCtrl = this;
 
     mainCtrl.goToAdmin = function (){
-      $location.path('/admincompanies');
+      $location.path('/admin');
+    };
+    mainCtrl.goToCompList = function (){
+      $location.path('/companylist');
     };
   });
 })();

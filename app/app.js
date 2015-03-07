@@ -3,7 +3,9 @@
   angular.module('frontin', [
   'ngRoute',
   'ngAnimate',
-  'admin'
+  'admin',
+  'login',
+  'frontmain'
   ])
   .config(function($routeProvider){
     $routeProvider
@@ -17,7 +19,7 @@
     })
     .otherwise({
       redirectTo: '/not-found'
-    });
+    })
   });
 
 })();

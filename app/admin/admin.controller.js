@@ -1,7 +1,7 @@
 (function () {
   "use strict";
   angular.module('frontin')
-    .controller('AdminController', function (CompanyService, $scope, $location, $routeParams){
+    .controller('AdminController', function (CompanyService, UserService, $scope, $location, $routeParams){
 
       var adminCtrl = this;
 
@@ -13,6 +13,8 @@
         adminCtrl.singleCompany = data;
         console.log(data);
       });
+
+      adminCtrl.username = UserService.getUser();
 
 //add new company
     adminCtrl.addCompany = function (newCompany) {
