@@ -1,58 +1,186 @@
-/*
-Error: File to import not found or unreadable: front.companies.
-       Load paths:
-         
-        on line 3 of style.scss
+.angular-google-map-container {
+  height: 100vh;
+  width: 100%; }
 
-1: @import 'config';
-2: @import 'admin';
-3: @import 'front.companies';
-4: @import 'front.map';
-5: @import 'animations';
+.logo img {
+  max-height: 100px;
+  max-width: 160px; }
 
-Backtrace:
-style.scss:3
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/import_node.rb:45:in `import'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Users/brentoneill/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: front.companies.\A        Load paths:\A          \A         on line 3 of style.scss\A \A 1: @import 'config';\A 2: @import 'admin';\A 3: @import 'front.companies';\A 4: @import 'front.map';\A 5: @import 'animations';"; }
+* {
+  box-sizing: border-box; }
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+body {
+  height: 100%;
+  width: 100%;
+  display: block; }
+
+.left {
+  display: inline-block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  height: 100%;
+  position: fixed; }
+
+.whiteBox {
+  background-color: white;
+  height: 30%;
+  display: block; }
+
+.siteLogo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  display: block; }
+
+.slogan {
+  font-size: 15px;
+  display: block;
+  margin: 0 auto 0 auto; }
+
+.gridView, .mapView {
+  width: 49%;
+  display: inline-block; }
+
+.blackBox {
+  background-color: grey;
+  display: block;
+  height: 70%; }
+
+.filters {
+  display: block; }
+
+.software {
+  display: block; }
+
+.hiring {
+  display: block; }
+
+.about {
+  display: block; }
+
+.right {
+  display: inline-block;
+  float: right;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 80%; }
+
+.container-list {
+  padding: 20px 0 0 0; }
+
+.box {
+  background-color: white;
+  border-radius: 8px;
+  width: 260px;
+  height: 150px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-right: 0;
+  padding: 0;
+  display: inline-block;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.61);
+  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.61); }
+
+.boxTop {
+  margin: 0;
+  padding: 5px;
+  height: 106px; }
+
+.boxLogo {
+  margin: 0;
+  padding: 0;
+  display: inline-block; }
+
+.companyLogo {
+  max-height: 100px;
+  max-width: 200px; }
+
+.boxHiring {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: right; }
+
+.boxBottom {
+  margin: 0;
+  padding: 0;
+  background-color: #77bdc6;
+  width: 100%;
+  height: 44px;
+  border-radius: 0 0px 8px 8px; }
+
+.companyName {
+  display: inline-block;
+  float: left; }
+
+.more {
+  display: inline-block;
+  float: right; }
+
+.map-window {
+  width: 300px;
+  margin: 0 auto; }
+  .map-window h1 {
+    text-align: center; }
+  .map-window i.fa {
+    margin-right: 10px; }
+  .map-window img {
+    max-width: 180px;
+    max-height: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+  .map-window span.addresstwo {
+    margin-left: 24px; }
+
+.map-comp-detail {
+  margin-left: 20px; }
+
+.view-animate.ng-enter, .view-animate.ng-leave {
+  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
+  display: block;
+  width: 100%;
+  position: absolute;
+  /*   top:0;
+  left:0;
+  right:0;
+  bottom:0; */
+  opacity: 0; }
+
+.view-animate.ng-enter.ng-enter-active {
+  opacity: 1; }
+
+.view-animate.ng-leave.ng-leave-active {
+  opacity: 0; }
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s; }
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+  opacity: 0;
+  transform: translateX(2000px); }
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+  opacity: 1;
+  transform: translateX(0); }
+
+/*# sourceMappingURL=compiled.css.map */
