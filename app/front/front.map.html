@@ -9,26 +9,23 @@
         <ui-gmap-window options="windowOptions" closeClick="closeClick()">
             <div class="map-window">
               <h1>{{company.name}}</h1>
-              <img data-ng-src="{{company.logo}}"
-              <p>{{company.address1}} <br />
-                 {{company.city}}</p>
-              <p>{{company.phone}}</p>
-              <p><a href="{{company.website}}" target="_blank">{{company.website}}</a></p>
-              <p>{{company.descrShort}}</p>
+              <img data-ng-src="{{company.logo}}" />
+              <div class="map-comp-detail">
+                <p>
+                  <i class="fa fa-building"></i>{{company.address1}} <br />
+                   <span class="addresstwo">{{company.city}}, SC</span></p>
+                <p>
+                   <i class="fa fa-phone"></i>{{company.phone}}
+                </p>
+                <p>
+                   <i class="fa fa-envelope"></i><a href="mailto:{{company.email}}" >{{company.email}}</a>
+                </p>
+                </p>
+                <p><i class="fa fa-link"></i><a href="{{company.website}}" target="_blank">{{company.website}}</a></p>
+                <p>{{company.descrShort}}</p>
+              </div>
           </div>
         </ui-gmap-window>
   </ui-gmap-marker>
-<!--   <ui-gmap-window
-      coords='company.coords'
-      show='false'
-      templateURL = 'map.window.html'
-      isIconVisibleOnClick='true'
-      closeClick='closeClick()'
-      >
-      <h3>{{company.name}}</h3>
-</ui-gmap-window> -->
-
-
-
 </div>
 </ui-gmap-google-map>
