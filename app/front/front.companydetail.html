@@ -22,10 +22,12 @@
 <div class="right">
     <h1 class="companyDetail">{{compCtrl.singleCompany.name}}</h1>
     <img ng-src="{{compCtrl.singleCompany.logo}}" alt="compCtrl.singleCompany.name">
-    <h2 class="infoDetail">{{compCtrl.singleCompany.street}} </h2>
-    <h2 class="infoDetail">{{compCtrl.singleCompany.city}} </h2>
-    <h2 class="infoDetail">{{compCtrl.singleCompany.phone}} </h2>
+    <a class="twitter" target= "_blank"       href="{{compCtrl.singleCompany.twitter}}">{{compCtrl.singleCompany.twitter}}</a>
+    <h3 class="infoDetail">{{compCtrl.singleCompany.address1}} </h3>
+    <h3 class="infoDetail">{{compCtrl.singleCompany.address2}} </h3>
+    <h3 class="infoDetail">{{compCtrl.singleCompany.city}} </h3>
+    <h3 class="infoDetail">{{compCtrl.singleCompany.phone}} </h3>
+    <a class="website" target= "_blank"       href="{{compCtrl.singleCompany.website}}">{{compCtrl.singleCompany.website}}</a>
     <p class="infoDescription">{{compCtrl.singleCompany.descrLong}} </p>
-    <a class="website" href="{{compCtrl.singleCompany.website}}">website</a>
-    <div class="mapp">map goes here</div>
+    <a class="website" target= "_blank" href="{{compCtrl.singleCompany.careersSite}}">{{compCtrl.singleCompany.careersSite}}</a>
 </div>
