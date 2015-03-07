@@ -25,8 +25,12 @@ body {
   margin: 0;
   padding: 0;
   width: 20%;
+<<<<<<< HEAD
   height: 100%;
   position: fixed; }
+=======
+  height: 100%; }
+>>>>>>> d3d86d1f83c758713bff3a9e655f566519cb3d4c
 
 .whiteBox {
   background-color: white;
