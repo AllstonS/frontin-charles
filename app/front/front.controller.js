@@ -1,15 +1,16 @@
 (function () {
     "use strict";
-    angular.module('demoApp')
-    .controller('MainController', function (ComapnyService, $routeParams, $location, _, $rootScope) {
-        var mainCtrl = this;
+    angular.module('frontin')
+    .controller('CompanyController', function (CompanyService, FavoriteService, $routeParams, $location, $rootScope) {
+        var compCtrl = this;
 
-        CompanyService.getSingleCompany($routeParams.productId).success(function (data) {
-            mainCtrl.singleCompany=data;
+        CompanyService.getSingleCompany($routeParams.companyId).success(function (data) {
+            compCtrl.singleCompany = data;
+            console.log(data);
         });
         CompanyService.getCompanies().success(function (data) {
-            mainCtrl.companies = data;
+            compCtrl.companies = data;
         });
-        mainCtrl.currentIndex = $routeParams.compnyId;
+        compCtrl.currentIndex = $routeParams.companyId;
     })
 })();

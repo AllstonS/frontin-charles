@@ -1,7 +1,7 @@
 (function () {
   "use strict";
-  angular.module('demoApp')
-      .factory('FavoriteService', function (_) {
+  angular.module('frontin')
+      .factory('FavoriteService', function () {
         var favorite = [];
 
         var addFavoriteCompany = function (newFavoriteCompany) {
@@ -21,4 +21,4 @@
             removeFavoriteCompany: removeFavoriteCompany,
         };
     });
-)}();
+})();
