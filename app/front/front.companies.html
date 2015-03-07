@@ -1,3 +1,27 @@
+<<<<<<< HEAD
+<!-- <div class="routeLinks">
+  <a href="#/"><span class="fa-lg">
+    <i class="fa fa-home"></i>
+  </span>Home</a>
+  <a href="#/addcompany"><span class="fa-lg">
+    <i class="fa fa-plus"></i>
+  </span>Add Company</a>
+
+</div> -->
+
+<div class="container">
+
+<ul>
+
+<div class="company-item" ng-repeat="company in compCtrl.companies">
+  <img ng-src="" height='100' alt="">
+  <h1>{{company.name}}</h1>
+  <a href="" ng-click="">More</a> <!-- in a href add path to detail view-->
+</div>
+</ul>
+
+
+=======
 <!-- <div class="company-item" ng-repeat="company in compCtrl.companies">
   <h1>{{company.name}}</h1>
   <p>{{company._id}}</p>
@@ -27,21 +51,22 @@
     </div>
 
    <div class="right">
-       <div class="container">
+       <div class="container-list">
            <div class="box" ng-repeat="company in compCtrl.companies">
                <div class="boxTop">
                    <div class="boxLogo">
-                       <img class="companyLogo" src="{{company.logo}}" alt="{{comapany.name}}">
+                       <img class="companyLogo" src="{{company.logo}}" alt="{{company.name}}">
                    </div>
                    <div class="boxHiring">
                        <img src="{{company.hiring}}">
                    </div>
                </div>
                <div class="boxBottom">
-                   <a href="" class="companyName">{{company.name}}</a>
-                   <a href="" class="more">more ></a>
+                   <span class="companyName">{{company.name}}</span>
+                   <a href="#/details/{{company._id}}">more ></a>
                </div>
            </div>
        </div>
    </div>
+>>>>>>> 08ad1db9886565e937816f4c2235b2e65fcd1671
 </div>
