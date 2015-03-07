@@ -1,5 +1,5 @@
 <div class="routeLinks">
-  <a href="#/admincompanies"><span class="fa-lg">  
+  <a href="#/admincompanies"><span class="fa-lg">
     <i class="fa fa-arrow-left"></i>
   </span>Back to List</a>
 </div>
@@ -8,27 +8,131 @@
 
   <h3>Add a new company</h3>
 
-  <form ng-submit="adminCtrl.addCompany(newCompany)">
-    <input type="text" ng-model="newCompany.logo" placeholder="img Url">
-    <input type="text" ng-model="newCompany.name" placeholder="Company Name">
-    <input type="text" ng-model="newCompany.address1" placeholder="Street Address 1">
-    <input type="text" ng-model="newCompany.address2" placeholder="Street Address 2">
-    <input type="text" ng-model="newCompany.city" placeholder="City">
-    <input type="text" ng-model="newCompany.zip" placeholder="ZIP">
-    <input type="text" ng-model="newCompany.email" placeholder="e-mail address">
-    <input type="text" ng-model="newCompany.phone" placeholder="Phone">
-    <input type="text" ng-model="newCompany.twitter" placeholder="Twitter">
-    <input type="text" ng-model="newCompany.website" placeholder="Website Url">
-    <input type="text" ng-model="newCompany.careersSite" placeholder="Careers Site Url">
-    <textarea type="text" ng-model="newCompany.descrLong" placeholder="Company profile - long"></textarea>
-    <textarea type="text" ng-model="newCompany.descrShort" placeholder="Company profile - short"></textarea>
-    <textarea type="text" ng-model="newCompany.clients" placeholder="Company clients"></textarea>
-    <input type="text" ng-model="newCompany.hiring" placeholder="Hiring?"> <!-- options: front, back, full -->
-    <input type="text" ng-model="newCompany.approved" placeholder="Approved?"> <!-- y or n -->
+  <form class="form-horizontal" ng-submit="adminCtrl.addCompany(newCompany)">
+    <div class="form-group">
+      <label for="" class="col-sm-2 control-label">Logo</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputLogo" ng-model="newCompany.logo" placeholder="img Url">
+      </div>
+  </div>
+    <div class="form-group">
+      <label for="" class="col-sm-2 control-label">Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputName" ng-model="newCompany.name" placeholder="Company Name">
+      </div>
+  </div>
+    <div class="form-group">
+      <label for="" class="col-sm-2 control-label">Address 1</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputAddress1" ng-model="newCompany.address1" placeholder="Street Address 1">
+      </div>
+  </div>
+    <div class="form-group">
+      <label for="" class="col-sm-2 control-label">Address 2</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputAddress2" ng-model="newCompany.address2" placeholder="Street Address 2">
+      </div>
+  </div>
+    <div class="form-group">
+      <label for="" class="col-sm-2 control-label">City</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputCity" ng-model="newCompany.city" placeholder="City">
+      </div>
+  </div>
+    <div class="form-group">
+      <label for="" class="col-sm-2 control-label">Zip</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputZip" ng-model="newCompany.zip" placeholder="ZIP">
+      </div>
+  </div>
+    <div class="form-group">
+      <label for="" class="col-sm-2 control-label">Email</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputEmail" ng-model="newCompany.email" placeholder="e-mail address">
+      </div>
+  </div>
+    <div class="form-group">
+      <label for="" class="col-sm-2 control-label">Phone</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputPhone" ng-model="newCompany.phone" placeholder="Phone">
+      </div>
+  </div>
+    <div class="form-group">
+      <label for="" class="col-sm-2 control-label">Twitter</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputTwitter" ng-model="newCompany.twitter" placeholder="Twitter">
+      </div>
+  </div>
+    <div class="form-group">
+      <label for="" class="col-sm-2 control-label">Website</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputWebsite" ng-model="newCompany.website" placeholder="Website Url">
+      </div>
+  </div>
+    <div class="form-group">
+      <label for="" class="col-sm-2 control-label">Careers Site</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputCareers" ng-model="newCompany.careersSite" placeholder="Careers Site Url">
+      </div>
+  </div>
+    <div class="form-group">
+      <label for="" class="col-sm-2 control-label">Description Long</label>
+      <div class="col-sm-10">
+        <textarea type="text" class="form-control" id="inputDescrLong" ng-model="newCompany.descrLong" placeholder="Company profile - long"></textarea>
+      </div>
+  </div>
+    <div class="form-group">
+      <label for="" class="col-sm-2 control-label">Description Short</label>
+      <div class="col-sm-10">
+        <textarea type="text" class="form-control" id="inputDescrShort" ng-model="newCompany.descrShort" placeholder="Company profile - short"></textarea>
+      </div>
+  </div>
+    <div class="form-group">
+      <label for="" class="col-sm-2 control-label">Clients</label>
+      <div class="col-sm-10">
+        <textarea type="text" class="form-control" id="inputClients" ng-model="newCompany.clients" placeholder="Company clients"></textarea>
+      </div>
+  </div>
+    <div class="form-group">
+      <label for="" class="col-sm-2 control-label">Hiring?</label>
+      <div class="radio">
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" value="option1"> Yes
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" value="option2"> No
+        </label>
+      </div>
+  </div>
+    <div class="form-group">
+      <label for="" class="col-sm-2 control-label">Approved?</label>
+      <div class="radio">
+        <label class="radio-inline">
+          <input
+            type="radio"
+            ng-model="newCompany.approved"
+            value="Yes"
+          > Yes
+        </label>
+        <label class="radio-inline">
+          <input
+          type="radio"
+          ng-model="newCompany.approved"
+          value="No"
+          >No
+        </label>
+      </div>
+    <!--   <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputApproved" ng-model="newCompany.approved" placeholder="Approved?"> y or n
+    </div> -->
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit">Add Company</button>
+        <!-- or   <a href="" class="btn-login" ng-click="adminCtrl.addNewProduct(newProduct)">Add product</a> -->
+      </div>
+    </div>
 
-
-    <button type="submit">Add Product</button>
-    <!-- or   <a href="" class="btn-login" ng-click="adminCtrl.addNewProduct(newProduct)">Add product</a> -->
   </form>
 
 </div>

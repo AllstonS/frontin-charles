@@ -3,6 +3,7 @@
   angular.module('frontin', [
   'ngRoute',
   'ngAnimate',
+  'uiGmapgoogle-maps',
   'admin',
   'login',
   'frontmain'

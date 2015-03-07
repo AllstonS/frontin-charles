@@ -1,3 +1,72 @@
+<<<<<<< HEAD
+<!-- <div class="routeLinks">
+  <a href="#/"><span class="fa-lg">
+    <i class="fa fa-home"></i>
+  </span>Home</a>
+  <a href="#/addcompany"><span class="fa-lg">
+    <i class="fa fa-plus"></i>
+  </span>Add Company</a>
+
+</div> -->
+
+<div class="container">
+
+<ul>
+
 <div class="company-item" ng-repeat="company in compCtrl.companies">
+  <img ng-src="" height='100' alt="">
   <h1>{{company.name}}</h1>
+  <a href="" ng-click="">More</a> <!-- in a href add path to detail view-->
+</div>
+</ul>
+
+
+=======
+<!-- <div class="company-item" ng-repeat="company in compCtrl.companies">
+  <h1>{{company.name}}</h1>
+  <p>{{company._id}}</p>
+</div>
+
+ -->
+<div class="wrapper">
+    <div class="left">
+        <div class="whiteBox">
+            <img class="siteLogo" src="http://fillmurray.com/100/100" alt="">
+            <h1 class="logo">Charlestonworks</h1>
+            <h2 class="slogan">Connecting You to Charleston's Thriving Tech Economy</h2>
+            <div class="views">
+                <button class="gridView">grid view</button>
+                <button class="mapView">map view</button>
+            </div>
+        </div>
+        <div class="blackBox">
+            <h3 class="filters">filters</h3>
+            <a href="" class="software">software</a>
+            <a href="" class="hiring">hiring</a>
+            <a href="" class="about">about this site</a>
+        </div>
+        <div class="footer">
+            <p>copyright blah blah</p>
+        </div>
+    </div>
+
+   <div class="right">
+       <div class="container-list">
+           <div class="box" ng-repeat="company in compCtrl.companies">
+               <div class="boxTop">
+                   <div class="boxLogo">
+                       <img class="companyLogo" src="{{company.logo}}" alt="{{company.name}}">
+                   </div>
+                   <div class="boxHiring">
+                       <img src="{{company.hiring}}">
+                   </div>
+               </div>
+               <div class="boxBottom">
+                   <span class="companyName">{{company.name}}</span>
+                   <a href="#/details/{{company._id}}">more ></a>
+               </div>
+           </div>
+       </div>
+   </div>
+>>>>>>> 08ad1db9886565e937816f4c2235b2e65fcd1671
 </div>

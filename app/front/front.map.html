@@ -1,20 +1,31 @@
-<div class="left">
-    <div class="whiteBox">
-        <img src="http://fillmurray.com/200/200" alt="">
-        <h1 class="logo">Charlestonworks</h1>
-        <h2 class="slogan">Connecting You to Charleston's Thriving Tech Economy</h2>
-        <div class="views">
-            <button class="gridView">grid view</button>
-            <button class="mapView">map view</button>
-        </div>
-    </div>
-    <div class="blackBox">
-        <h3 class="filters">filters</h3>
-        <a href="" class="software">software</a>
-        <a href="" class="hiring">hiring</a>
-        <a href="" class="about">about this site</a>
-    </div>
-    <div class="footer">
-        <p>copyright blah blah</p>
-    </div>
+<ui-gmap-google-map center='map.center' zoom='map.zoom'>
+<div ng-repeat="company in compCtrl.companies">
+
+  <ui-gmap-marker
+        idKey='company._id'
+        coords='company.coords'
+        >
+
+        <ui-gmap-window options="windowOptions" closeClick="closeClick()">
+            <div class="map-window">
+              <h1>{{company.name}}</h1>
+              <img data-ng-src="{{company.logo}}" />
+              <div class="map-comp-detail">
+                <p>
+                  <i class="fa fa-building"></i>{{company.address1}} <br />
+                   <span class="addresstwo">{{company.city}}, SC</span></p>
+                <p>
+                   <i class="fa fa-phone"></i>{{company.phone}}
+                </p>
+                <p>
+                   <i class="fa fa-envelope"></i><a href="mailto:{{company.email}}" >{{company.email}}</a>
+                </p>
+                </p>
+                <p><i class="fa fa-link"></i><a href="{{company.website}}" target="_blank">{{company.website}}</a></p>
+                <p>{{company.descrShort}}</p>
+              </div>
+          </div>
+        </ui-gmap-window>
+  </ui-gmap-marker>
 </div>
+</ui-gmap-google-map>
