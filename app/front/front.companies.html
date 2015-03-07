@@ -30,15 +30,15 @@
            <div class="box" ng-repeat="company in compCtrl.companies">
                <div class="boxTop">
                    <div class="boxLogo">
-                       <img class="companyLogo" src="{{company.logo}}" alt="{{comapany.name}}">
+                       <img class="companyLogo" src="{{company.logo}}" alt="{{company.name}}">
                    </div>
                    <div class="boxHiring">
                        <img src="{{company.hiring}}">
                    </div>
                </div>
                <div class="boxBottom">
-                   <a href="" class="companyName">{{company.name}}</a>
-                   <a href="" class="more">more ></a>
+                   <span class="companyName">{{company.name}}</span>
+                   <a href="#/detail/{{product._id}}">more ></a>
                </div>
            </div>
        </div>
