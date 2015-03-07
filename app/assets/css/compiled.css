@@ -1,12 +1,12 @@
 /*
-Error: File to import not found or unreadable: front.list.
+Error: File to import not found or unreadable: front.companies.
        Load paths:
          
         on line 3 of style.scss
 
 1: @import 'config';
 2: @import 'admin';
-3: @import 'front.list';
+3: @import 'front.companies';
 4: @import 'front.map';
 5: @import 'animations';
 
@@ -55,4 +55,4 @@ style.scss:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: front.list.\A        Load paths:\A          \A         on line 3 of style.scss\A \A 1: @import 'config';\A 2: @import 'admin';\A 3: @import 'front.list';\A 4: @import 'front.map';\A 5: @import 'animations';"; }
+  content: "Error: File to import not found or unreadable: front.companies.\A        Load paths:\A          \A         on line 3 of style.scss\A \A 1: @import 'config';\A 2: @import 'admin';\A 3: @import 'front.companies';\A 4: @import 'front.map';\A 5: @import 'animations';"; }
