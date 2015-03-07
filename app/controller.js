@@ -8,8 +8,11 @@
     mainCtrl.goToAdmin = function (){
       $location.path('/admin');
     };
-    mainCtrl.goToCompList = function (){
-      $location.path('/companylist');
+    mainCtrl.goToList = function (){
+      $location.path('/list');
+    };
+    mainCtrl.goToMap = function (){
+      $location.path('/map');
     };
   });
 })();
