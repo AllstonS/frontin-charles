@@ -1,0 +1,30 @@
+*
+body {
+  background: linear-gradient(rgba(48, 67, 77, 0.2), rgba(48, 67, 77, 0.2)), url("images/skyline.jpg");
+  background-position: 100%; }
+
+nav.navbar-default {
+  background: rgba(255, 255, 255, 0.3); }
+
+ul.nav {
+  font-family: "Poiret One";
+  color: yellow; }
+
+h3, .motto {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 3px 2px 0 rgba(62, 163, 175, 0.5);
+  text-transform: uppercase;
+  font-family: "iwan-reschniev", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.1; }
+
+.box {
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 20vh; }
+
+.container {
+  width: 600px; }
+
+/*# sourceMappingURL=main.css.map */
