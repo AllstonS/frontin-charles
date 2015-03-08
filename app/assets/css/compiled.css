@@ -9,17 +9,15 @@ body {
   max-height: 100px;
   max-width: 160px; }
 
-.large-image {
+.splash .large-image {
   width: 100%;
   z-index: -1000;
   height: 100vh;
   background: linear-gradient(rgba(48, 67, 77, 0.2), rgba(48, 67, 77, 0.2)), url("skyline.jpg"); }
-
-.intro, .name, .work {
+.splash .intro, .splash .name, .splash .work {
   font-family: "Poiret One";
   color: white; }
-
-h3, .motto {
+.splash h3, .splash .motto {
   color: white;
   text-align: center;
   font-size: 40px;
@@ -28,37 +26,21 @@ h3, .motto {
   font-family: "iwan-reschniev", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.1; }
-
-.box {
+.splash .boxed {
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   margin-top: 20vh; }
 
 /* .container {
   width:600px;
 } */
-*
-body {
-  background: linear-gradient(rgba(48, 67, 77, 0.2), rgba(48, 67, 77, 0.2)), url("images/skyline.jpg");
-  background-position: 100%; }
-
-nav.navbar-default {
-  background: rgba(255, 255, 255, 0.3); }
-
-ul.nav {
-  font-family: "Poiret One";
-  color: yellow; }
-
-p {
+p.motto {
   font-family: Poiret One, Helvetica;
   font-size: 15px;
   color: white; }
 
-.box {
+.about-container {
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   margin-top: 20vh; }
-
-.container {
-  width: 600px; }
 
 /*# sourceMappingURL=about.css.map */
 * {

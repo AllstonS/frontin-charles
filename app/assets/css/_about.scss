@@ -1,25 +1,14 @@
-*
-body {
-  background: linear-gradient(rgba(48, 67, 77, 0.2), rgba(48, 67, 77, 0.2)), url("images/skyline.jpg");
-  background-position: 100%; }
 
-nav.navbar-default {
-  background: rgba(255, 255, 255, 0.3); }
 
-ul.nav {
-  font-family: "Poiret One";
-  color: yellow; }
-
-p {
+p.motto {
   font-family: Poiret One, Helvetica;
   font-size: 15px;
   color: white; }
 
-.box {
+.about-container {
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-  margin-top: 20vh; }
+  margin-top: 20vh;
+  }
 
-.container {
-  width: 600px; }
 
 /*# sourceMappingURL=about.css.map */
