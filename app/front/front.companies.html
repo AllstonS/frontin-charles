@@ -1,16 +1,4 @@
 <div class="wrapper">
-
-    <div class="header">
-        <a href=""class="homePage">frontin' charleston</a>
-        <a href=""class="linkss">about</a>
-        <a href=""class="linkss">companies</a>
-        <a href=""class="linkss">map</a>
-        <a href=""class="linkss adminn">admin</a>
-    </div>
-
-
-
-
    <div class="right">
        <div class="container-list">
            <div class="box" ng-repeat="company in compCtrl.companies">
@@ -19,15 +7,19 @@
                        <img class="companyLogo" ng-src="{{company.logo}}" alt="{{company.name}}">
                    </div>
                    <div class="boxHiring">
-                       <img class="hiring" ng-class="{{company.hiring}} === 'Yes' ? 'hiring' : 'not-hiring'">
+                       <img class="hiring" ng-src="{{company.hiring}}">
                    </div>
                </div>
                <div class="boxBottom">
                    <span class="companyName">{{company.name}}</span>
+<<<<<<< HEAD
                    <a class="more" href="#/details/{{company._id}}">info.</a>
                    <div ng-controller="FavoriteController as favorite">
                        <button class="buy" ng-click="favorite.addFavoriteCompany(company)">favorite</button>
                   </div>
+=======
+                   <a ng-click="compCtrl.changeBackground(company)" href="#/details/{{company._id}}"> more > </a>
+>>>>>>> 275a35f49c9e496675f00abe904c4cc3fd9464dc
                </div>
            </div>
        </div>

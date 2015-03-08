@@ -52,7 +52,7 @@
 
 
 
-    
+
     .controller('FavoriteController', function (FavoriteService) {
 
         var favorite = this;
@@ -70,5 +70,5 @@
             favorite.total = FavoriteService.getTotalNumberOfFavoriteCompanies();
             return favorite.total;
         };
-    });
+    })
 })();
