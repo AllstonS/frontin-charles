@@ -13,15 +13,7 @@ body {
     width: 100%;
     display: block;
 }
-.left {
-    display: inline-block;
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 20%;
-    height: 100%;
-    position: fixed;
-}
+
 .whiteBox {
     background-color: white;
     height: 30%;
@@ -75,7 +67,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: white;
-    width: 75%;
+    width: 100%;
 
 }
 
@@ -106,9 +98,10 @@ body {
     margin: 0;
     padding: 0;
     display: inline-block;
+    padding: 3px 0 0 3px;
 }
 .companyLogo {
-    max-height: 100px;
+    max-height: 85px;
     max-width: 200px;
 }
 .boxHiring {
@@ -116,7 +109,10 @@ body {
     padding: 0;
     display: inline-block;
     float: right;
-
+}
+.hiring {
+    //background-image: url("../images/moneyy.png");
+    background-image: url("http://fillmurray.com/50/50");
 }
 .boxBottom {
     margin: 0;

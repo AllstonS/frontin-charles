@@ -1,34 +1,13 @@
 <div class="wrapper">
-    <div class="left">
-        <div class="whiteBox">
-            <img class="siteLogo" src="http://fillmurray.com/100/100" alt="">
-            <h1 class="logo">Charlestonworks</h1>
-            <h2 class="slogan">Connecting You to Charleston's Thriving Tech Economy</h2>
-            <div class="views">
-                <button class="gridView">grid view</button>
-                <button class="mapView">map view</button>
-            </div>
-        </div>
-        <div class="blackBox">
-            <h3 class="filters">filters</h3>
-            <a href="" class="software">software</a>
-            <a href="" class="hiring">hiring</a>
-            <a href="" class="about">about this site</a>
-        </div>
-        <div class="footer">
-            <p>copyright blah blah</p>
-        </div>
-    </div>
-
    <div class="right">
        <div class="container-list">
            <div class="box" ng-repeat="company in compCtrl.companies | orderBy: 'name'">
                <div class="boxTop">
                    <div class="boxLogo">
-                       <img class="companyLogo" src="{{company.logo}}" alt="{{company.name}}">
+                       <img class="companyLogo" ng-src="{{company.logo}}" alt="{{company.name}}">
                    </div>
                    <div class="boxHiring">
-                       <img src="{{company.hiring}}">
+                       <img class="hiring" ng-src="{{company.hiring}}">
                    </div>
                </div>
                <div class="boxBottom">
