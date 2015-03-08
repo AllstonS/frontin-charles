@@ -1,32 +1,43 @@
 
+.splash{
+  .large-image {
+    width:100%;
+    position:fixed;
+    z-index:-1000;
+    height: 100vh;
+    background: linear-gradient(rgba(48, 67, 77, 0.5),
+    rgba(48, 67, 77, 0.5)), url("skyline.jpg") no-repeat;
+  }
+  .splash-container {
+    z-index:100;
+    width:600px;
+    border-radius:4px;
+    width:600px;
+    margin:0 auto;
+    text-align:center;
+  }
+  h2 {
+    color: white;
+    font-family: 'Playball', cursive;
+    font-size: 75px;
+    text-shadow: 3px 2px 0 rgba(0, 0, 0, 0.5);
+/*     text-shadow: 3px 2px 0 rgba(62, 163, 175, 0.5);
+ */    font-weight: 400;
+  }
 
-.large-image {
-  width:100%;
-  z-index:-1000;
-  height: 100vh;
-  background: linear-gradient(rgba(48, 67, 77, 0.2), rgba(48, 67, 77, 0.2)), url("skyline.jpg");
+   h3 {
+     color:white;
+     text-align:center;
+     font-size: 40px;
+     text-shadow: 3px 2px 0 rgba(62, 163, 175, 0.5);
+     text-transform: uppercase;
+     font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+     font-weight: 400;
+     line-height: 1.1
+   }
+   .boxed {
+     margin-top: 50px;
+     border-radius: 3px solid white;
+
+   }
 }
-
-
- .name {
-
- }
-
- h3.motto {
-   color:white;
-   text-align:center;
-   font-size: 40px;
-   text-shadow: 3px 2px 0 rgba(62, 163, 175, 0.5);
-   text-transform: uppercase;
-   font-family: "iwan-reschniev", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-   font-weight: 400;
-   line-height: 1.1
- }
-
- .box {
-
- }
-
- /* .container {
-   width:600px;
- } */
