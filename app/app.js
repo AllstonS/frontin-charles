@@ -11,7 +11,15 @@
   .config(function($routeProvider){
     $routeProvider
     .when('/', {
-      templateUrl: 'views/home.html',
+      templateUrl: 'views/splash.html',
+      controller: 'MainController as mainCtrl'
+    })
+    .when('/about', {
+      templateUrl: 'views/about.html',
+      controller: 'MainController as mainCtrl'
+    })
+    .when('/splash', {
+      templateUrl: 'views/splash.html',
       controller: 'MainController as mainCtrl'
     })
     .when('/not-found', {

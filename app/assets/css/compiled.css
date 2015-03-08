@@ -5,15 +5,55 @@
 body {
   margin-top: 50px; }
 
+body:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-size: 120% 120%;
+  width: 120%;
+  height: 120%;
+  -webkit-filter: blur(25px);
+  filter: blur(25px);
+  background-position: center; }
+
 .logo img {
   max-height: 100px;
   max-width: 160px; }
 
+.container-admin {
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  color: black;
+  font-family: 'Helvetica', sans-serif; }
+
+.large-image {
+  width: 100%;
+  z-index: -1000;
+  height: 100vh;
+  background: linear-gradient(rgba(48, 67, 77, 0.2), rgba(48, 67, 77, 0.2)), url("skyline.jpg"); }
+
+h3.motto {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 3px 2px 0 rgba(62, 163, 175, 0.5);
+  text-transform: uppercase;
+  font-family: "iwan-reschniev", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.1; }
+
+/* .container {
+  width:600px;
+} */
 * {
   box-sizing: border-box; }
 
 .wrapper {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   height: 100%; }
 
@@ -169,21 +209,55 @@ hr {
 .map-window {
   width: 300px;
   margin: 0 auto; }
+  .map-window p {
+    color: black; }
   .map-window h1 {
     text-align: center; }
   .map-window i.fa {
-    margin-right: 10px; }
+    margin-right: 10px;
+    transition: all .5s ease; }
   .map-window img {
     max-width: 180px;
     max-height: 100px;
     display: block;
     margin: 0 auto;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin-top: 20px; }
   .map-window span.addresstwo {
     margin-left: 24px; }
+  .map-window .fa-heart {
+    color: red; }
 
 .map-comp-detail {
   margin-left: 20px; }
+
+button.btn-favorites {
+  margin-bottom: 20px;
+  display: inline-block;
+  color: black;
+  transition: all .5s ease;
+  /*   &:visited {
+    text-decoration:none;
+  }
+  &:active {
+    text-decoration:none;
+  }
+  &:hover {
+    color:black;
+    text-decoration:none;
+    transform: scale(1.2);
+  } */ }
+
+.favorites-wrapper {
+  position: fixed;
+  top: 160px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 4px;
+  padding: 10px;
+  padding-bottom: 0px;
+  z-index: 100000; }
 
 .view-animate.ng-enter, .view-animate.ng-leave {
   -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
@@ -197,7 +271,11 @@ hr {
   bottom:0; */
   opacity: 0; }
 
+.view-animate.ng-enter {
+  left: 100%; }
+
 .view-animate.ng-enter.ng-enter-active {
+  left: 0;
   opacity: 1; }
 
 .view-animate.ng-leave.ng-leave-active {
