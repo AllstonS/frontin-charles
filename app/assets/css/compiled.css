@@ -64,6 +64,25 @@ h3.motto {
 /* .container {
   width:600px;
 } */
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.homePage {
+  font-size: 20px;
+  color: white;
+  vertical-align: middle; }
+
+.linkss {
+  color: white;
+  font-size: 20px;
+  vertical-align: middle; }
+
+.adminn {
+  color: white;
+  font-size: 20px; }
+
 * {
   box-sizing: border-box; }
 
@@ -75,56 +94,19 @@ h3.motto {
 body {
   height: 100%;
   width: 100%;
-  display: block; }
-
-.whiteBox {
-  background-color: white;
-  height: 30%;
-  display: block; }
-
-.siteLogo {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100px;
-  height: 100px;
-  display: block; }
-
-.slogan {
-  font-size: 15px;
   display: block;
-  margin: 0 auto 0 auto; }
-
-.gridView, .mapView {
-  width: 49%;
-  display: inline-block; }
-
-.blackBox {
-  background-color: grey;
-  display: block;
-  height: 70%; }
-
-.filters {
-  display: block; }
-
-.software {
-  display: block; }
-
-.hiring {
-  display: block; }
-
-.about {
-  display: block; }
+  background-image: url("../images/wallpaper.png"); }
 
 .right {
   display: inline-block;
   float: right;
   margin: 0;
-  padding: 0;
-  background-color: white;
-  width: 100%; }
+  padding: 0 150px;
+  width: 100%;
+  background-image: url("../images/wallpaper.png"); }
 
 .container-list {
-  padding: 20px 0 0 0; }
+  padding: 0; }
 
 .box {
   background-color: white;
@@ -139,31 +121,63 @@ body {
   display: inline-block;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.61);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.61);
-  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.61); }
+  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.61);
+  position: relative;
+  min-height: inherit; }
+  .box:hover {
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0px 0px 15px 0px white;
+    -moz-box-shadow: 0px 0px 15px 0px white;
+    box-shadow: 0px 0px 10px -2px white; }
 
 .boxTop {
   margin: 0;
   padding: 5px;
-  height: 106px; }
+  height: 106px;
+  position: relative;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: translateZ(0); }
+  .boxTop:hover {
+    -webkit-filter: none; }
 
 .boxLogo {
-  margin: 0;
+  margin: 0 auto 0 auto;
   padding: 0;
   display: inline-block;
-  padding: 3px 0 0 3px; }
+  height: 100%;
+  width: 75%;
+  position: relative; }
 
 .companyLogo {
-  max-height: 85px;
-  max-width: 200px; }
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  margin: 0 auto 0 auto; }
 
 .boxHiring {
   margin: 0;
   padding: 0;
   display: inline-block;
-  float: right; }
+  float: right;
+  height: 60px;
+  width: 60px;
+  border: 0 none;
+  z-index: 1;
+  position: absolute; }
 
 .hiring {
-  background-image: url("http://fillmurray.com/50/50"); }
+  border: 0 none;
+  background-image: url("../images/hiring.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: inline-block; }
 
 .boxBottom {
   margin: 0;
@@ -175,11 +189,27 @@ body {
 
 .companyName {
   display: inline-block;
-  float: left; }
+  float: left;
+  padding: 10px;
+  font-size: 15px;
+  color: #276d76; }
 
 .more {
   display: inline-block;
-  float: right; }
+  float: right;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent; }
+  .more:hover {
+    transform: translateY(-2px);
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px rgba(39, 113, 119, 0.78); }
 
 ul > li.box {
   position: relative;
