@@ -6,3 +6,36 @@
 body {
   margin-top:50px;
 }
+
+
+body:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display:block;
+  background-size:120% 120%;
+  width:120%;
+  height:120%;
+  -webkit-filter: blur(25px);
+  filter: blur(25px);
+  background-position:center;
+}
+
+.backbtn-wrapper {
+  position: fixed;
+  top: 80px;
+  left: 20px;
+  i {
+    color:white;
+    background-color:black;
+    padding:10px;
+    border-radius:3px;
+    cursor:pointer;
+    transition: all .5s ease;
+    &:hover {
+      transform:translateX(-4px);
+    }
+  }
+}

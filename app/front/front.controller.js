@@ -2,7 +2,10 @@
     "use strict";
     angular.module('frontin')
     .controller('CompanyController', function (CompanyService, FavoriteService, $routeParams, $location, $scope) {
+
         var compCtrl = this;
+
+        var favorites = FavoriteService.getFavoriteCompanies();
 
         $scope.map = {
           center: {
@@ -24,5 +27,26 @@
             // }
         });
         compCtrl.currentIndex = $routeParams.companyId;
+
+        compCtrl.goToCompanies = function() {
+          $location.path('/list');
+          $('head').find('style').remove();
+        }
+        compCtrl.addToFavorites = function(company){
+          console.log('trying to add company');
+          console.log(company);
+          FavoriteService.addFavoriteCompany(company);
+        };
+        compCtrl.removeFromFavorites = function(company){
+          console.log('trying to delete company');
+          FavoriteService.removeFavoriteCompany(company);
+        };
+        compCtrl.changeBackground = function(company){
+          console.log('changing bg image');
+          var image = company.logo;
+          console.log(image);
+          $('head').find('style').remove();
+          $('<style>body:before{background-image: url("'+image+'");}</style>').appendTo('head');
+        }
     })
 })();

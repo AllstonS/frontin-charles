@@ -11,7 +11,7 @@
   .config(function($routeProvider){
     $routeProvider
     .when('/', {
-      templateUrl: 'views/home.html',
+      templateUrl: 'views/splash.html',
       controller: 'MainController as mainCtrl'
     })
     .when('/about', {
