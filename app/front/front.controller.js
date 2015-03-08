@@ -28,6 +28,10 @@
         });
         compCtrl.currentIndex = $routeParams.companyId;
 
+        compCtrl.goToCompanies = function() {
+          $location.path('/list');
+          $('head').find('style').remove();
+        }
         compCtrl.addToFavorites = function(company){
           console.log('trying to add company');
           console.log(company);
