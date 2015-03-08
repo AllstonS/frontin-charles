@@ -125,7 +125,8 @@ body:before {
 body {
   height: 100%;
   width: 100%;
-  display: block; }
+  display: block;
+  background-image: url("../images/wallpaper.png"); }
 
 .right {
   display: inline-block;
@@ -152,13 +153,14 @@ body {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.61);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.61);
   box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.61);
+  text-transform: none;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
   position: relative;
   min-height: inherit; }
   .box:hover {
-    transform: translateY(-3px);
-    -webkit-box-shadow: 0px 0px 15px 0px white;
-    -moz-box-shadow: 0px 0px 15px 0px white;
-    box-shadow: 0px 0px 10px -2px white; }
+    transform: translateY(-3px); }
 
 .boxTop {
   margin: 0;
@@ -233,14 +235,23 @@ body {
 .favorite:focus {
   outline-color: transparent;
   outline-style: none; }
+  .favorite:focus .star polygon {
+    fill: #ffd055 !important; }
 
 .stars {
-  cursor: pointer; }
+  cursor: pointer;
+  text-transform: none;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s; }
   .stars:hover .star polygon {
     fill: #ffd055 !important; }
 
 polygon {
   fill: #d8d8d8; }
+
+.starss polygon {
+  fill: #ffd055 !important; }
 
 .more {
   display: inline-block;
