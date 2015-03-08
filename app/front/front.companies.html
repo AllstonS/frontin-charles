@@ -22,7 +22,7 @@
 
    <div class="right">
        <div class="container-list">
-           <div class="box" ng-repeat="company in compCtrl.companies">
+           <div class="box" ng-repeat="company in compCtrl.companies | orderBy: 'name'">
                <div class="boxTop">
                    <div class="boxLogo">
                        <img class="companyLogo" src="{{company.logo}}" alt="{{company.name}}">
