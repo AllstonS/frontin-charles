@@ -3,18 +3,20 @@
 </div>
 
 
-
 <div class="containerDetailView">
   <ul>
     <li class="members box">
-      <img class="profile" ng-src="{{compCtrl.singleCompany.logo}}" alt="compCtrl.singleCompany.name">
+      <img class="detailview" ng-src="{{compCtrl.singleCompany.logo}}" alt="compCtrl.singleCompany.name">
       <ul class="info">
-       <p>{{compCtrl.singleCompany.address1}} </p>
-       <p>{{compCtrl.singleCompany.city}} </p>
-       <p>{{compCtrl.singleCompany.zip}} </p>
-       <p>{{compCtrl.singleCompany.phone}} </p>
-       <a class="website" target= "_blank"       href="{{compCtrl.singleCompany.website}}">{{compCtrl.singleCompany.website}}</a>
-       <p class="infoDescription">{{compCtrl.singleCompany.descrLong}} </p>
+       <p><i class="fa fa-building"></i>{{compCtrl.singleCompany.address1}}
+         <br/>
+          <span class="addresstwo">{{compCtrl.singleCompany.city}}, SC</span></p>
+       <p><i class="fa fa-phone"></i>{{compCtrl.singleCompany.phone}} </p>
+       <p><i class="fa fa-envelope"></i>{{compCtrl.singleCompany.email}}</p>
+       <p><i class="fa fa-twitter"></i>{{compCtrl.singleCompany.twitter}}</p>
+       <i class="fa fa-briefcase"></i><a class="website" target= "_blank"    href="{{compCtrl.singleCompany.website}}">{{compCtrl.singleCompany.careersSite}}</a><br>
+       <i class="fa fa-link"></i><a class="website" target= "_blank"       href="{{compCtrl.singleCompany.website}}">{{compCtrl.singleCompany.website}}</a>
+       <p class="infoDescriptionDetail">{{compCtrl.singleCompany.descrLong}} </p>
      </ul>
     </li>
   </ul>
