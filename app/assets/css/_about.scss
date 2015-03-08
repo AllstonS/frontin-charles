@@ -1,12 +1,25 @@
+ .about-container{
+
+   .large-image {
+     width:100%;
+     position:fixed;
+     z-index:-1000;
+     height: 100vh;
+     background: linear-gradient(rgba(48, 67, 77, 0.5),
+     rgba(48, 67, 77, 0.5)), url("skyline.jpg") no-repeat;
+  }
+
+ .boxed {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+
+  .motto {
+    font-family: 'Poiret One', cursive;
+    font-size: 15px;
+    color: white;
+    }
 
 
-
-p.motto {
-  font-family: Poiret One, Helvetica;
-  font-size: 15px;
-  color: white; }
-
-.about-container {
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-  margin-top: 20vh;
   }
