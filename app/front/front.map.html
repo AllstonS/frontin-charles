@@ -1,13 +1,3 @@
-<div class="favorites-wrapper">
-  <p>
-    <i class="fa fa-2x fa-heart"></i>
-    <div ng-repeat="favorite in compCtrl.favorites" class="favorites-list">
-      <p>{{favorite.name}}</p>
-    </div>
-  </p>
-</div>
-
-
 <ui-gmap-google-map center='map.center' zoom='map.zoom'>
 
   <div ng-repeat="company in compCtrl.companies">

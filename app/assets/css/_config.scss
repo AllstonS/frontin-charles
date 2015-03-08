@@ -1,6 +1,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Poiret+One|Playball);
 @import url(http://fonts.googleapis.com/css?family=Poiret+One);
+
 .angular-google-map-container {
   height: 100vh;
   width:100%;
@@ -24,4 +25,21 @@ body:before {
   -webkit-filter: blur(25px);
   filter: blur(25px);
   background-position:center;
+}
+
+.backbtn-wrapper {
+  position: fixed;
+  top: 80px;
+  left: 20px;
+  i {
+    color:white;
+    background-color:black;
+    padding:10px;
+    border-radius:3px;
+    cursor:pointer;
+    transition: all .5s ease;
+    &:hover {
+      transform:translateX(-4px);
+    }
+  }
 }
