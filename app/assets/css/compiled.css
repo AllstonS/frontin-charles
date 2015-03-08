@@ -1,78 +1,276 @@
-/*
-Error: Invalid CSS after "*\/": expected identifier, was ".large-image"
-        on line 2 of _splash.scss
-        from line 3 of style.scss
+.angular-google-map-container {
+  height: 100vh;
+  width: 100%; }
 
-1: @import 'config';
-2: @import 'admin';
-3: @import 'splash';
-4: @import 'about';
-5: @import 'front.comp';
-6: @import 'front.map';
-7: @import 'animations';
+body {
+  margin-top: 50px; }
 
-Backtrace:
-_splash.scss:2
-style.scss:3
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/scss/parser.rb:1165:in `expected'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/scss/parser.rb:1101:in `expected'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/scss/parser.rb:1081:in `expr!'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/scss/static_parser.rb:145:in `reference_combinator'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/scss/static_parser.rb:139:in `combinator'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/scss/static_parser.rb:119:in `selector'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/scss/static_parser.rb:86:in `selector_comma_sequence'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/scss/parser.rb:1079:in `expr!'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/scss/static_parser.rb:20:in `parse_selector'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:424:in `visit_rule'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `with_base'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:325:in `map'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:88:in `block in with_import'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:88:in `with_import'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `with_base'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Users/owner/.rvm/gems/ruby-2.2.0/gems/sass-3.4.12/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"*/\": expected identifier, was \".large-image\"\A         on line 2 of _splash.scss\A         from line 3 of style.scss\A \A 1: @import 'config';\A 2: @import 'admin';\A 3: @import 'splash';\A 4: @import 'about';\A 5: @import 'front.comp';\A 6: @import 'front.map';\A 7: @import 'animations';"; }
+.logo img {
+  max-height: 100px;
+  max-width: 160px; }
+
+.large-image {
+  width: 100%;
+  z-index: -1000;
+  height: 100vh;
+  background: linear-gradient(rgba(48, 67, 77, 0.2), rgba(48, 67, 77, 0.2)), url("skyline.jpg"); }
+
+.intro, .name, .work {
+  font-family: "Poiret One";
+  color: white; }
+
+h3, .motto {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 3px 2px 0 rgba(62, 163, 175, 0.5);
+  text-transform: uppercase;
+  font-family: "iwan-reschniev", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.1; }
+
+.box {
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 20vh; }
+
+/* .container {
+  width:600px;
+} */
+*
+body {
+  background: linear-gradient(rgba(48, 67, 77, 0.2), rgba(48, 67, 77, 0.2)), url("images/skyline.jpg");
+  background-position: 100%; }
+
+nav.navbar-default {
+  background: rgba(255, 255, 255, 0.3); }
+
+ul.nav {
+  font-family: "Poiret One";
+  color: yellow; }
+
+p {
+  font-family: Poiret One, Helvetica;
+  font-size: 15px;
+  color: white; }
+
+.box {
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 20vh; }
+
+.container {
+  width: 600px; }
+
+/*# sourceMappingURL=about.css.map */
+* {
+  box-sizing: border-box; }
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+body {
+  height: 100%;
+  width: 100%;
+  display: block; }
+
+.whiteBox {
+  background-color: white;
+  height: 30%;
+  display: block; }
+
+.siteLogo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  display: block; }
+
+.slogan {
+  font-size: 15px;
+  display: block;
+  margin: 0 auto 0 auto; }
+
+.gridView, .mapView {
+  width: 49%;
+  display: inline-block; }
+
+.blackBox {
+  background-color: grey;
+  display: block;
+  height: 70%; }
+
+.filters {
+  display: block; }
+
+.software {
+  display: block; }
+
+.hiring {
+  display: block; }
+
+.about {
+  display: block; }
+
+.right {
+  display: inline-block;
+  float: right;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 100%; }
+
+.container-list {
+  padding: 20px 0 0 0; }
+
+.box {
+  background-color: white;
+  border-radius: 8px;
+  width: 260px;
+  height: 150px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-right: 0;
+  padding: 0;
+  display: inline-block;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.61);
+  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.61); }
+
+.boxTop {
+  margin: 0;
+  padding: 5px;
+  height: 106px; }
+
+.boxLogo {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  padding: 3px 0 0 3px; }
+
+.companyLogo {
+  max-height: 85px;
+  max-width: 200px; }
+
+.boxHiring {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: right; }
+
+.hiring {
+  background-image: url("http://fillmurray.com/50/50"); }
+
+.boxBottom {
+  margin: 0;
+  padding: 0;
+  background-color: #77bdc6;
+  width: 100%;
+  height: 44px;
+  border-radius: 0 0px 8px 8px; }
+
+.companyName {
+  display: inline-block;
+  float: left; }
+
+.more {
+  display: inline-block;
+  float: right; }
+
+ul > li.box {
+  position: relative;
+  float: left;
+  list-style-type: none;
+  width: 50%;
+  height: 100%;
+  margin-top: 5%;
+  margin-left: 23%;
+  padding: 5px;
+  box-sizing: content-box;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition: all .2s ease-in; }
+
+ul > li.box:hover {
+  -webkit-transform: translate(0, -5px);
+  transform: translate(0, -5px);
+  background: #ECF0F1; }
+
+.info {
+  clear: both; }
+
+img.profile {
+  float: left;
+  padding: 8px;
+  margin: 3px;
+  border-radius: 10%; }
+
+h1.title {
+  font-family: helvetica, arial, sans-serif;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); }
+
+hr {
+  margin: 2 auto;
+  width: 80%; }
+
+.map-window {
+  width: 300px;
+  margin: 0 auto; }
+  .map-window h1 {
+    text-align: center; }
+  .map-window i.fa {
+    margin-right: 10px; }
+  .map-window img {
+    max-width: 180px;
+    max-height: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+  .map-window span.addresstwo {
+    margin-left: 24px; }
+
+.map-comp-detail {
+  margin-left: 20px; }
+
+.view-animate.ng-enter, .view-animate.ng-leave {
+  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
+  display: block;
+  width: 100%;
+  position: absolute;
+  /*   top:0;
+  left:0;
+  right:0;
+  bottom:0; */
+  opacity: 0; }
+
+.view-animate.ng-enter.ng-enter-active {
+  opacity: 1; }
+
+.view-animate.ng-leave.ng-leave-active {
+  opacity: 0; }
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s; }
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+  opacity: 0;
+  transform: translateX(2000px); }
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+  opacity: 1;
+  transform: translateX(0); }
+
+/*# sourceMappingURL=compiled.css.map */

@@ -1,15 +1,15 @@
 
- */
+
 .large-image {
   width:100%;
   z-index:-1000;
   height: 100vh;
-  background-image: linear-gradient(rgba(48, 67, 77, 0.2), rgba(48, 67, 77, 0.2)), url("skyline.jpg");
+  background: linear-gradient(rgba(48, 67, 77, 0.2), rgba(48, 67, 77, 0.2)), url("skyline.jpg");
 }
 
 .intro, .name, .work {
    font-family:"Poiret One";
-   color:yellow;
+   color:white;
  }
 
  .name {
