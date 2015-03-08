@@ -7,8 +7,8 @@
 
     var loginCtrl = this;
 
-    loginCtrl.goToStorefront = function(){
-      $location.path('/store');
+    loginCtrl.goHome = function(){
+      $location.path('/');
     };
 
     loginCtrl.login = function(username){
