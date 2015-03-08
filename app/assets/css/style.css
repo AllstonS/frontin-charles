@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-@import url(http://fonts.googleapis.com/css?family=Poiret+One|Playball);
-@import url(http://fonts.googleapis.com/css?family=Poiret+One);
 .angular-google-map-container {
   height: 100vh;
   width: 100%; }
@@ -22,20 +19,6 @@ body:before {
   filter: blur(25px);
   background-position: center; }
 
-.backbtn-wrapper {
-  position: fixed;
-  top: 80px;
-  left: 20px; }
-  .backbtn-wrapper i {
-    color: white;
-    background-color: black;
-    padding: 10px;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: all .5s ease; }
-    .backbtn-wrapper i:hover {
-      transform: translateX(-4px); }
-
 .logo img {
   max-height: 100px;
   max-width: 160px; }
@@ -49,78 +32,28 @@ body:before {
 
 .splash .large-image {
   width: 100%;
-  position: fixed;
   z-index: -1000;
   height: 100vh;
-  background: linear-gradient(rgba(48, 67, 77, 0.5), rgba(48, 67, 77, 0.5)), url("skyline.jpg") no-repeat; }
-.splash .splash-container {
-  z-index: 100;
-  width: 600px;
-  border-radius: 4px;
-  width: 600px;
-  margin: 0 auto;
-  text-align: center; }
-.splash h2 {
-  color: white;
-  font-family: 'Playball', cursive;
-  font-size: 75px;
-  text-shadow: 3px 2px 0 rgba(0, 0, 0, 0.5);
-  /*     text-shadow: 3px 2px 0 rgba(62, 163, 175, 0.5);
-   */
-  font-weight: 400; }
-.splash h3 {
+  background: linear-gradient(rgba(48, 67, 77, 0.2), rgba(48, 67, 77, 0.2)), url("skyline.jpg"); }
+.splash h3.motto {
   color: white;
   text-align: center;
   font-size: 40px;
   text-shadow: 3px 2px 0 rgba(62, 163, 175, 0.5);
   text-transform: uppercase;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "iwan-reschniev", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.1; }
-.splash .boxed {
-  margin-top: 50px;
-  border-radius: 3px solid white; }
 
-.about-container .large-image {
-  width: 100%;
-  position: fixed;
-  z-index: -1000;
-  height: 100vh;
-  background: linear-gradient(rgba(48, 67, 77, 0.5), rgba(48, 67, 77, 0.5)), url("skyline.jpg") no-repeat; }
-.about-container .boxed {
-  width: 70%;
-  margin: 0 auto;
-  margin-top: 2%; }
-.about-container .motto {
-  font-family: 'Poiret One', cursive;
+p.motto {
+  font-family: Poiret One, Helvetica;
   font-size: 15px;
   color: white; }
 
-<<<<<<< HEAD
-=======
-/* .container {
-  width:600px;
-} */
-.header {
-  width: 100%;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.4); }
+.about-container {
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 20vh; }
 
-.homePage {
-  font-size: 20px;
-  color: white;
-  vertical-align: middle; }
-
-.linkss {
-  color: white;
-  font-size: 20px;
-  vertical-align: middle; }
-
-.adminn {
-  color: white;
-  font-size: 20px; }
-
->>>>>>> eeed189f3e29b239df6791b5784d98f3e53e8c0c
 * {
   box-sizing: border-box; }
 
@@ -134,16 +67,54 @@ body {
   width: 100%;
   display: block; }
 
+.whiteBox {
+  background-color: white;
+  height: 30%;
+  display: block; }
+
+.siteLogo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  display: block; }
+
+.slogan {
+  font-size: 15px;
+  display: block;
+  margin: 0 auto 0 auto; }
+
+.gridView, .mapView {
+  width: 49%;
+  display: inline-block; }
+
+.blackBox {
+  background-color: grey;
+  display: block;
+  height: 70%; }
+
+.filters {
+  display: block; }
+
+.software {
+  display: block; }
+
+.hiring {
+  display: block; }
+
+.about {
+  display: block; }
+
 .right {
   display: inline-block;
   float: right;
   margin: 0;
-  padding: 0 150px;
-  width: 100%;
-  background-image: url("../images/wallpaper.png"); }
+  padding: 0;
+  background-color: white;
+  width: 100%; }
 
 .container-list {
-  padding: 0; }
+  padding: 20px 0 0 0; }
 
 .box {
   background-color: white;
@@ -158,63 +129,31 @@ body {
   display: inline-block;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.61);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.61);
-  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.61);
-  position: relative;
-  min-height: inherit; }
-  .box:hover {
-    transform: translateY(-3px);
-    -webkit-box-shadow: 0px 0px 15px 0px white;
-    -moz-box-shadow: 0px 0px 15px 0px white;
-    box-shadow: 0px 0px 10px -2px white; }
+  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.61); }
 
 .boxTop {
   margin: 0;
   padding: 5px;
-  height: 106px;
-  position: relative;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  transition-duration: 0.3s;
-  transition-property: transform;
-  transform: translateZ(0); }
-  .boxTop:hover {
-    -webkit-filter: none; }
+  height: 106px; }
 
 .boxLogo {
-  margin: 0 auto 0 auto;
+  margin: 0;
   padding: 0;
   display: inline-block;
-  height: 100%;
-  width: 75%;
-  position: relative; }
+  padding: 3px 0 0 3px; }
 
 .companyLogo {
-  max-height: 100%;
-  max-width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 0;
-  margin: 0 auto 0 auto; }
+  max-height: 85px;
+  max-width: 200px; }
 
 .boxHiring {
   margin: 0;
   padding: 0;
   display: inline-block;
-  float: right;
-  height: 60px;
-  width: 60px;
-  border: 0 none;
-  z-index: 1;
-  position: absolute; }
+  float: right; }
 
 .hiring {
-  border: 0 none;
-  background-image: url("../images/hiring.png");
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  display: inline-block; }
+  background-image: url("http://fillmurray.com/50/50"); }
 
 .boxBottom {
   margin: 0;
@@ -226,45 +165,11 @@ body {
 
 .companyName {
   display: inline-block;
-  padding: 10px;
-  font-size: 15px;
-  color: #276d76; }
-
-.favorite {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 8px 0 0 6px;
   float: left; }
-
-.favorite:focus {
-  outline-color: transparent;
-  outline-style: none; }
-
-.stars {
-  cursor: pointer; }
-  .stars:hover .star polygon {
-    fill: #ffd055 !important; }
-
-polygon {
-  fill: #d8d8d8; }
 
 .more {
   display: inline-block;
-  float: right;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  font-size: 15px;
-  transition-duration: 0.3s;
-  transition-property: transform;
-  transform: translateZ(0);
-  box-shadow: 0 0 1px transparent; }
-  .more:hover {
-    transform: translateY(-2px);
-    color: white;
-    text-decoration: none;
-    text-shadow: 2px 2px rgba(39, 113, 119, 0.78); }
+  float: right; }
 
 ul > li.box {
   position: relative;
@@ -399,4 +304,4 @@ button.btn-favorites {
   opacity: 1;
   transform: translateX(0); }
 
-/*# sourceMappingURL=compiled.css.map */
+/*# sourceMappingURL=style.css.map */
