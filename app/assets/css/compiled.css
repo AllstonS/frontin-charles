@@ -23,17 +23,20 @@ body:before {
   max-height: 100px;
   max-width: 160px; }
 
+.container-admin {
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  color: black;
+  font-family: 'Helvetica', sans-serif; }
+
 .large-image {
   width: 100%;
   z-index: -1000;
   height: 100vh;
   background: linear-gradient(rgba(48, 67, 77, 0.2), rgba(48, 67, 77, 0.2)), url("skyline.jpg"); }
 
-.intro, .name, .work {
-  font-family: "Poiret One";
-  color: white; }
-
-h3, .motto {
+h3.motto {
   color: white;
   text-align: center;
   font-size: 40px;
@@ -43,43 +46,14 @@ h3, .motto {
   font-weight: 400;
   line-height: 1.1; }
 
-.box {
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-  margin-top: 20vh; }
-
 /* .container {
   width:600px;
 } */
-*
-body {
-  background: linear-gradient(rgba(48, 67, 77, 0.2), rgba(48, 67, 77, 0.2)), url("images/skyline.jpg");
-  background-position: 100%; }
-
-nav.navbar-default {
-  background: rgba(255, 255, 255, 0.3); }
-
-ul.nav {
-  font-family: "Poiret One";
-  color: yellow; }
-
-p {
-  font-family: Poiret One, Helvetica;
-  font-size: 15px;
-  color: white; }
-
-.box {
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-  margin-top: 20vh; }
-
-.container {
-  width: 600px; }
-
-/*# sourceMappingURL=about.css.map */
 * {
   box-sizing: border-box; }
 
 .wrapper {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   height: 100%; }
 
@@ -235,6 +209,8 @@ hr {
 .map-window {
   width: 300px;
   margin: 0 auto; }
+  .map-window p {
+    color: black; }
   .map-window h1 {
     text-align: center; }
   .map-window i.fa {
@@ -245,7 +221,8 @@ hr {
     max-height: 100px;
     display: block;
     margin: 0 auto;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin-top: 20px; }
   .map-window span.addresstwo {
     margin-left: 24px; }
   .map-window .fa-heart {
@@ -294,7 +271,11 @@ button.btn-favorites {
   bottom:0; */
   opacity: 0; }
 
+.view-animate.ng-enter {
+  left: 100%; }
+
 .view-animate.ng-enter.ng-enter-active {
+  left: 0;
   opacity: 1; }
 
 .view-animate.ng-leave.ng-leave-active {

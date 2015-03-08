@@ -1,6 +1,9 @@
 .map-window {
   width:300px;
   margin:0 auto;
+  p {
+    color:black;
+  }
   h1 {
     text-align:center;
   }
@@ -15,6 +18,7 @@
     display:block;
     margin:0 auto;
     margin-bottom:20px;
+    margin-top:20px;
   }
   span.addresstwo {
     margin-left:24px;
