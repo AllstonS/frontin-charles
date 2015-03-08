@@ -306,9 +306,28 @@ h1.title {
   text-transform: uppercase;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); }
 
+.infoDescriptionDetail {
+  margin-right: 15%;
+  margin-top: 3%; }
+
 hr {
   margin: 2 auto;
   width: 80%; }
+
+i.fa {
+  margin-right: 10px;
+  transition: all .5s ease; }
+
+img.detailview {
+  max-width: 180px;
+  max-height: 100px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+span.addresstwo {
+  margin-left: 24px; }
 
 .map-window {
   width: 300px;
