@@ -26,15 +26,6 @@
 
 }
 
-
-
-
-
-
-
-
-
-
 * {
     box-sizing: border-box;
 }
@@ -47,8 +38,9 @@ body {
     height: 100%;
     width: 100%;
     display: block;
-/*     background-image: url("../images/wallpaper.png");
- */
+    background-image: url("../images/wallpaper.png");
+
+
 
 }
 
@@ -79,16 +71,17 @@ body {
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.61);
     -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.61);
     box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.61);
-
+    text-transform: none;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
     position: relative;
     min-height: inherit;
     &:hover {
       transform: translateY(-3px);
-      -webkit-box-shadow: 0px 0px 15px 0px rgb(255, 255, 255);
-      -moz-box-shadow: 0px 0px 15px 0px rgb(255, 255, 255);
-      box-shadow: 0px 0px 10px -2px rgb(255, 255, 255);
     }
 }
+
 .boxTop {
     margin: 0;
     padding: 5px;
@@ -154,12 +147,48 @@ body {
 }
 .companyName {
     display: inline-block;
-    float: left;
     padding: 10px;
     font-size: 15px;
     color: rgb(39, 109, 118);
 
 }
+.favorite {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 0 0 6px;
+    float: left;
+}
+.favorite:focus {
+    outline-color: transparent;
+    outline-style: none;
+    .star polygon {
+      fill: #ffd055 !important;
+    }
+}
+.stars {
+  cursor: pointer;
+  text-transform: none;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+    &:hover {
+        .star polygon {
+          fill: #ffd055 !important;
+        }
+    }
+}
+.stars.click {}
+polygon {
+  fill: #d8d8d8;
+}
+
+.starss polygon {
+    fill: #ffd055 !important;
+}
+
+
+
 .more {
     display: inline-block;
     float: right;
@@ -222,4 +251,28 @@ h1.title {
   text-shadow: 0 1px 5px rgba(0,0,0,0.50);
 }
 
+.infoDescriptionDetail {
+  margin-right: 15%;
+  margin-top: 3%;
+}
+
 hr {margin:2 auto;width:80%;}
+
+///////////////styling for detail view box contents////////////////
+
+i.fa {
+  margin-right:10px;
+  transition: all .5s ease;
+
+}
+img.detailview {
+  max-width:180px;
+  max-height:100px;
+  display:block;
+  margin:0 auto;
+  margin-bottom:20px;
+  margin-top:20px;
+}
+span.addresstwo {
+  margin-left:24px;
+}

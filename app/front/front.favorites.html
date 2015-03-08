@@ -1,0 +1,28 @@
+<div class="container-list">
+    <div ng-controller="FavoriteController as favorite">
+        <ul>
+            <li class="box" ng-repeat="item in favorite.items">
+                <div class="boxTop">
+                    <div class="boxLogo">
+                        <img class="companyLogo" ng-src="{{item.logo}}" alt="{{item.name}}">
+                    </div>
+                    <div class="boxHiring">
+                        <img class="hiring" ng-src="{{item.hiring}}">
+                    </div>
+                </div>
+                <div class="boxBottom">
+
+                    <button class="remove favorite" ng-click="favorite.removeFavoriteCompany(item)">
+                        <div class="starss" data-stars="1">
+                            <svg height="25" width="23" class="star rating" data-rating="1">
+                              <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+                            </svg>
+                        </div>
+                    </button>
+                    <span class="companyName">{{item.name}}</span>
+                    <a ng-click="compCtrl.changeBackground(company)"class="more" href="#/details/{{company._id}}">info.</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url(http://fonts.googleapis.com/css?family=Poiret+One|Playball);
 @import url(http://fonts.googleapis.com/css?family=Poiret+One);
 .angular-google-map-container {
@@ -96,11 +95,6 @@ body:before {
   font-size: 15px;
   color: white; }
 
-<<<<<<< HEAD
-=======
-/* .container {
-  width:600px;
-} */
 .header {
   width: 100%;
   height: 50px;
@@ -120,7 +114,6 @@ body:before {
   color: white;
   font-size: 20px; }
 
->>>>>>> eeed189f3e29b239df6791b5784d98f3e53e8c0c
 * {
   box-sizing: border-box; }
 
@@ -133,8 +126,7 @@ body {
   height: 100%;
   width: 100%;
   display: block;
-  /*     background-image: url("../images/wallpaper.png");
-   */ }
+  background-image: url("../images/wallpaper.png"); }
 
 .right {
   display: inline-block;
@@ -161,13 +153,14 @@ body {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.61);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.61);
   box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.61);
+  text-transform: none;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
   position: relative;
   min-height: inherit; }
   .box:hover {
-    transform: translateY(-3px);
-    -webkit-box-shadow: 0px 0px 15px 0px white;
-    -moz-box-shadow: 0px 0px 15px 0px white;
-    box-shadow: 0px 0px 10px -2px white; }
+    transform: translateY(-3px); }
 
 .boxTop {
   margin: 0;
@@ -228,10 +221,37 @@ body {
 
 .companyName {
   display: inline-block;
-  float: left;
   padding: 10px;
   font-size: 15px;
   color: #276d76; }
+
+.favorite {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 0 0 6px;
+  float: left; }
+
+.favorite:focus {
+  outline-color: transparent;
+  outline-style: none; }
+  .favorite:focus .star polygon {
+    fill: #ffd055 !important; }
+
+.stars {
+  cursor: pointer;
+  text-transform: none;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s; }
+  .stars:hover .star polygon {
+    fill: #ffd055 !important; }
+
+polygon {
+  fill: #d8d8d8; }
+
+.starss polygon {
+  fill: #ffd055 !important; }
 
 .more {
   display: inline-block;
@@ -286,9 +306,28 @@ h1.title {
   text-transform: uppercase;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); }
 
+.infoDescriptionDetail {
+  margin-right: 15%;
+  margin-top: 3%; }
+
 hr {
   margin: 2 auto;
   width: 80%; }
+
+i.fa {
+  margin-right: 10px;
+  transition: all .5s ease; }
+
+img.detailview {
+  max-width: 180px;
+  max-height: 100px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+span.addresstwo {
+  margin-left: 24px; }
 
 .map-window {
   width: 300px;
