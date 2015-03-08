@@ -2,7 +2,11 @@
     "use strict";
     angular.module('frontin')
     .controller('CompanyController', function (CompanyService, FavoriteService, $routeParams, $location, $scope) {
+
         var compCtrl = this;
+
+        var favorites = FavoriteService.getFavoriteCompanies();
+        console.log(favorites);
 
         $scope.map = {
           center: {

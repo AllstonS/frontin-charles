@@ -2,19 +2,18 @@
   "use strict";
   angular.module('frontin')
       .factory('FavoriteService', function () {
-        var favorite = [];
+        var favorites = [];
 
         var addFavoriteCompany = function (newFavoriteCompany) {
-          favorite.push(newFavoriteCompany);
+          favorites.push(newFavoriteCompany);
         };
         var getFavoriteCompanies = function () {
-          return favorite;
+          return favorites;
         };
         var removeFavoriteCompany = function (item) {
-            var index = favorite.indexOf(item);
-            favorite.splice(index,1);
+            var index = favorites.indexOf(item);
+            favorites.splice(index,1);
         };
-
         return {
             addFavoriteCompany: addFavoriteCompany,
             getFavoriteCompanies: getFavoriteCompanies,
