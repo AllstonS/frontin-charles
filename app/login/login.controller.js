@@ -12,7 +12,8 @@
     };
 
     loginCtrl.login = function(username){
-      if(username === 'brent'){
+      username = username.toLowerCase()
+      if(username === 'brent' || username === 'veronika' || username === 'allston' || username === 'courtland' || username ==='ronald'){
         UserService.setUser(username);
         $location.path('/admincompanies');
       };
