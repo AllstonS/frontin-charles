@@ -153,12 +153,37 @@ body {
 }
 .companyName {
     display: inline-block;
-    float: left;
     padding: 10px;
     font-size: 15px;
     color: rgb(39, 109, 118);
 
 }
+.favorite {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 0 0 6px;
+    float: left;
+}
+.favorite:focus {
+    outline-color: transparent;
+    outline-style: none;
+}
+.stars {
+  cursor: pointer;
+    &:hover {
+        .star polygon {
+          fill: #ffd055 !important;
+        }
+    }
+}
+.stars.click {}
+polygon {
+  fill: #d8d8d8;
+}
+
+
+
 .more {
     display: inline-block;
     float: right;

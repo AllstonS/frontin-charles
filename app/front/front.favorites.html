@@ -1,0 +1,19 @@
+<div class="container-list">
+    <div ng-controller="FavoriteController as favorite">
+        <ul>
+            <li class="box" ng-repeat="item in favorite.items">
+                <div class="boxTop">
+                    <div class="boxLogo">
+                        <img class="companyLogo" ng-src="{{item.logo}}" alt="{{item.name}}">
+                    </div>
+                    <div class="boxHiring">
+                        <img class="hiring" ng-src="{{item.hiring}}">
+                    </div>
+                </div>
+                <div class="boxBottom">
+                    <span class="companyName">{{item.name}}</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

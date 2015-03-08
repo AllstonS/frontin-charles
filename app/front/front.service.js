@@ -1,28 +1,25 @@
 (function () {
   "use strict";
   angular.module('frontin')
-      .factory('FavoriteService', function () {
 
-        var favorites = [];
+    .factory('FavoriteService', function (_) {
+        var favorite = [];
 
-        var getFavorites = function () {
-          console.log('getting favorites');
-          return favorites;
+        var addFavoriteCompany = function (newFavoriteCompany) {
+          favorite.push(newFavoriteCompany);
+        };
+        var getFavoriteCompanies = function () {
+          return favorite;
+        };
+        var removeFavoriteCompany = function (item) {
+            var index = favorite.indexOf(item);
+            favorite.splice(index,1);
         };
 
-        var addFavorite = function (newFavorite) {
-          favorites.push(newFavorite);
-          console.log(favorites);
-        };
-
-        var removeFavorite = function (company) {
-            var index = favorites.indexOf(company);
-            favorites.splice(index,1);
-        };
         return {
-            addFavoriteCompany: addFavorite,
-            getFavoriteCompanies: getFavorites,
-            removeFavoriteCompany: removeFavorite,
+            getFavoriteCompanies: getFavoriteCompanies,
+            addFavoriteCompany: addFavoriteCompany,
+            removeFavoriteCompany: removeFavoriteCompany,
         };
-    });
+    })
 })();

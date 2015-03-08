@@ -188,10 +188,28 @@ body {
 
 .companyName {
   display: inline-block;
-  float: left;
   padding: 10px;
   font-size: 15px;
   color: #276d76; }
+
+.favorite {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 0 0 6px;
+  float: left; }
+
+.favorite:focus {
+  outline-color: transparent;
+  outline-style: none; }
+
+.stars {
+  cursor: pointer; }
+  .stars:hover .star polygon {
+    fill: #ffd055 !important; }
+
+polygon {
+  fill: #d8d8d8; }
 
 .more {
   display: inline-block;
