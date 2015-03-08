@@ -2,22 +2,27 @@
   "use strict";
   angular.module('frontin')
       .factory('FavoriteService', function () {
+
         var favorites = [];
 
-        var addFavoriteCompany = function (newFavoriteCompany) {
-          favorites.push(newFavoriteCompany);
-        };
-        var getFavoriteCompanies = function () {
+        var getFavorites = function () {
+          console.log('getting favorites');
           return favorites;
         };
-        var removeFavoriteCompany = function (item) {
-            var index = favorites.indexOf(item);
+
+        var addFavorite = function (newFavorite) {
+          favorites.push(newFavorite);
+          console.log(favorites);
+        };
+
+        var removeFavorite = function (company) {
+            var index = favorites.indexOf(company);
             favorites.splice(index,1);
         };
         return {
-            addFavoriteCompany: addFavoriteCompany,
-            getFavoriteCompanies: getFavoriteCompanies,
-            removeFavoriteCompany: removeFavoriteCompany,
+            addFavoriteCompany: addFavorite,
+            getFavoriteCompanies: getFavorites,
+            removeFavoriteCompany: removeFavorite,
         };
     });
 })();
