@@ -26,9 +26,15 @@
       templateUrl: 'views/404.html',
       controller: 'MainController as mainCtrl'
     })
+    .when('/favorites', {
+      templateUrl: 'front/front.favorites.html',
+      controller: 'FavoriteController as favorite'
+    })
     .otherwise({
       redirectTo: '/not-found'
     })
-  });
+  })
+  .constant('_', _)
+
 
 })();

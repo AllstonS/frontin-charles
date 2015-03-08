@@ -5,8 +5,6 @@
 
         var compCtrl = this;
 
-        var favorites = FavoriteService.getFavoriteCompanies();
-
         $scope.map = {
           center: {
             latitude: 32.8433,
@@ -32,15 +30,6 @@
           $location.path('/list');
           $('head').find('style').remove();
         }
-        compCtrl.addToFavorites = function(company){
-          console.log('trying to add company');
-          console.log(company);
-          FavoriteService.addFavoriteCompany(company);
-        };
-        compCtrl.removeFromFavorites = function(company){
-          console.log('trying to delete company');
-          FavoriteService.removeFavoriteCompany(company);
-        };
         compCtrl.changeBackground = function(company){
           console.log('changing bg image');
           var image = company.logo;
@@ -48,5 +37,22 @@
           $('head').find('style').remove();
           $('<style>body:before{background-image: url("'+image+'");}</style>').appendTo('head');
         }
+    })
+
+
+    .controller('FavoriteController', function (FavoriteService) {
+
+        var favorite = this;
+
+        favorite.items = FavoriteService.getFavoriteCompanies();
+        favorite.total = 0;
+
+        favorite.addFavoriteCompany = function (item) {
+            FavoriteService.addFavoriteCompany(item);
+        };
+        favorite.removeFavoriteCompany = function (item) {
+            FavoriteService.removeFavoriteCompany(item);
+        };
+
     })
 })();
