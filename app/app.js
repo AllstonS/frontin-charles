@@ -14,6 +14,14 @@
       templateUrl: 'views/home.html',
       controller: 'MainController as mainCtrl'
     })
+    .when('/about', {
+      templateUrl: 'views/about.html',
+      controller: 'MainController as mainCtrl'
+    })
+    .when('/splash', {
+      templateUrl: 'views/splash.html',
+      controller: 'MainController as mainCtrl'
+    })
     .when('/not-found', {
       templateUrl: 'views/404.html',
       controller: 'MainController as mainCtrl'
