@@ -25,6 +25,9 @@
                <div class="boxBottom">
                    <span class="companyName">{{company.name}}</span>
                    <a class="more" href="#/details/{{company._id}}">info.</a>
+                   <div ng-controller="FavoriteController as favorite">
+                       <button class="buy" ng-click="favorite.addFavoriteCompany(company)">favorite</button>
+                  </div>
                </div>
            </div>
        </div>

@@ -49,4 +49,26 @@
           $('<style>body:before{background-image: url("'+image+'");}</style>').appendTo('head');
         }
     })
+
+
+
+    
+    .controller('FavoriteController', function (FavoriteService) {
+
+        var favorite = this;
+
+        favorite.items = FavoriteService.getFavoriteCompanies();
+        Favorite.total = 0;
+
+        favorite.addFavoriteCompany = function (item) {
+            FavoriteService.addFavoriteCompany(item);
+        };
+        favorite.removeFavoriteCompany = function (item) {
+            FavoriteService.removeFavoriteCompany(item);
+        };
+        favorite.updateTotal = function () {
+            favorite.total = FavoriteService.getTotalNumberOfFavoriteCompanies();
+            return favorite.total;
+        };
+    });
 })();
