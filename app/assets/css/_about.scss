@@ -7,19 +7,19 @@
      height: 100vh;
      background: linear-gradient(rgba(48, 67, 77, 0.5),
      rgba(48, 67, 77, 0.5)), url("skyline.jpg") no-repeat;
+     background-size:cover;
   }
 
  .boxed {
     width: 70%;
     margin: 0 auto;
-    margin-top: 2%;
+    margin-top: 20vh;
   }
 
   .motto {
     font-family: 'Poiret One', cursive;
-    font-size: 15px;
+    font-size: 24px;
     color: white;
+    text-shadow: 4px 4px 10px rgba(0,0,0,.7);
     }
-
-
   }

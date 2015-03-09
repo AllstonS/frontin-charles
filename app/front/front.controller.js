@@ -31,7 +31,7 @@
           $('head').find('style').remove();
         }
         compCtrl.changeBackground = function(company){
-          console.log('changing bg image');
+          console.log(compnay);
           var image = company.logo;
           console.log(image);
           $('head').find('style').remove();
@@ -53,6 +53,12 @@
         favorite.removeFavoriteCompany = function (item) {
             FavoriteService.removeFavoriteCompany(item);
         };
-
+        favorite.changeBackground = function(company){
+          console.log(company);
+          var image = company.logo;
+          console.log(image);
+          $('head').find('style').remove();
+          $('<style>body:before{background-image: url("'+image+'");}</style>').appendTo('head');
+        }
     })
 })();

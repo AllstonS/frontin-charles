@@ -17,8 +17,8 @@ body:before {
   background-size: 120% 120%;
   width: 120%;
   height: 120%;
-  -webkit-filter: blur(50px);
-  filter: blur(50px);
+  -webkit-filter: blur(25px);
+  filter: blur(25px);
   background-position: center; }
 
 .backbtn-wrapper {
@@ -44,17 +44,7 @@ body:before {
   padding: 20px;
   border-radius: 4px;
   color: black;
-  font-family: 'Helvetica', sans-serif;
-  margin-top: 80px;
-  margin-bottom: 40px; }
-
-.login {
-  width: 300px;
-  padding: 40px;
-  border-radius: 4px;
-  background-color: white;
-  margin: 0 auto;
-  margin-top: 20vh; }
+  font-family: 'Helvetica', sans-serif; }
 
 .splash .large-image {
   width: 100%;
@@ -96,17 +86,15 @@ body:before {
   position: fixed;
   z-index: -1000;
   height: 100vh;
-  background: linear-gradient(rgba(48, 67, 77, 0.5), rgba(48, 67, 77, 0.5)), url("skyline.jpg") no-repeat;
-  background-size: cover; }
+  background: linear-gradient(rgba(48, 67, 77, 0.5), rgba(48, 67, 77, 0.5)), url("skyline.jpg") no-repeat; }
 .about-container .boxed {
   width: 70%;
   margin: 0 auto;
-  margin-top: 20vh; }
+  margin-top: 2%; }
 .about-container .motto {
   font-family: 'Poiret One', cursive;
-  font-size: 24px;
-  color: white;
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); }
+  font-size: 15px;
+  color: white; }
 
 .header {
   width: 100%;
@@ -436,4 +424,4 @@ button.btn-favorites {
   opacity: 1;
   transform: translateX(0); }
 
-/*# sourceMappingURL=compiled.css.map */
+/*# sourceMappingURL=scompiled.css.map */
