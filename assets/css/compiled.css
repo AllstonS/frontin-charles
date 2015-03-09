@@ -142,17 +142,19 @@ body {
   background-image: url("../images/wallpaper.png"); }
 
 .right {
-  display: inline-block;
-  float: right;
+  display: block;
   margin: 0;
   padding: 0 150px;
   width: 100%;
   background-image: url("../images/wallpaper.png"); }
 
 .container-list {
-  padding: 0; }
+  padding: 0;
+  margin: 0 auto;
+  text-align: center; }
 
 .box {
+  text-align: left;
   background-color: white;
   border-radius: 8px;
   width: 260px;
