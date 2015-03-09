@@ -31,7 +31,7 @@
           $('head').find('style').remove();
         }
         compCtrl.changeBackground = function(company){
-          console.log(compnay);
+          console.log(company);
           var image = company.logo;
           console.log(image);
           $('head').find('style').remove();
