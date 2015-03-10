@@ -7,6 +7,8 @@
     height: 100vh;
     background: linear-gradient(rgba(48, 67, 77, 0.5),
     rgba(48, 67, 77, 0.5)), url("skyline.jpg") no-repeat;
+    background-size:cover;
+
   }
   .splash-container {
     z-index:100;

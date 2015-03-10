@@ -1,0 +1,427 @@
+@import url(http://fonts.googleapis.com/css?family=Poiret+One|Playball);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+.angular-google-map-container {
+  height: 100vh;
+  width: 100%; }
+
+body {
+  margin-top: 50px; }
+
+body:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-size: 120% 120%;
+  width: 120%;
+  height: 120%;
+  -webkit-filter: blur(25px);
+  filter: blur(25px);
+  background-position: center; }
+
+.backbtn-wrapper {
+  position: fixed;
+  top: 80px;
+  left: 20px; }
+  .backbtn-wrapper i {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .5s ease; }
+    .backbtn-wrapper i:hover {
+      transform: translateX(-4px); }
+
+.logo img {
+  max-height: 100px;
+  max-width: 160px; }
+
+.container-admin {
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  color: black;
+  font-family: 'Helvetica', sans-serif; }
+
+.splash .large-image {
+  width: 100%;
+  position: fixed;
+  z-index: -1000;
+  height: 100vh;
+  background: linear-gradient(rgba(48, 67, 77, 0.5), rgba(48, 67, 77, 0.5)), url("skyline.jpg") no-repeat;
+  background-size: cover; }
+.splash .splash-container {
+  z-index: 100;
+  width: 600px;
+  border-radius: 4px;
+  width: 600px;
+  margin: 0 auto;
+  text-align: center; }
+.splash h2 {
+  color: white;
+  font-family: 'Playball', cursive;
+  font-size: 75px;
+  text-shadow: 3px 2px 0 rgba(0, 0, 0, 0.5);
+  /*     text-shadow: 3px 2px 0 rgba(62, 163, 175, 0.5);
+   */
+  font-weight: 400; }
+.splash h3 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 3px 2px 0 rgba(62, 163, 175, 0.5);
+  text-transform: uppercase;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.1; }
+.splash .boxed {
+  margin-top: 50px;
+  border-radius: 3px solid white; }
+
+.about-container .large-image {
+  width: 100%;
+  position: fixed;
+  z-index: -1000;
+  height: 100vh;
+  background: linear-gradient(rgba(48, 67, 77, 0.5), rgba(48, 67, 77, 0.5)), url("skyline.jpg") no-repeat; }
+.about-container .boxed {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2%; }
+.about-container .motto {
+  font-family: 'Poiret One', cursive;
+  font-size: 15px;
+  color: white; }
+
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.homePage {
+  font-size: 20px;
+  color: white;
+  vertical-align: middle; }
+
+.linkss {
+  color: white;
+  font-size: 20px;
+  vertical-align: middle; }
+
+.adminn {
+  color: white;
+  font-size: 20px; }
+
+* {
+  box-sizing: border-box; }
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%; }
+
+body {
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-image: url("../images/wallpaper.png"); }
+
+.right {
+  display: inline-block;
+  float: right;
+  margin: 0;
+  padding: 0 150px;
+  width: 100%;
+  background-image: url("../images/wallpaper.png"); }
+
+.container-list {
+  padding: 0; }
+
+.box {
+  background-color: white;
+  border-radius: 8px;
+  width: 260px;
+  height: 150px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-right: 0;
+  padding: 0;
+  display: inline-block;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.61);
+  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.61);
+  text-transform: none;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  position: relative;
+  min-height: inherit; }
+  .box:hover {
+    transform: translateY(-3px); }
+
+.boxTop {
+  margin: 0;
+  padding: 5px;
+  height: 106px;
+  position: relative;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: translateZ(0); }
+  .boxTop:hover {
+    -webkit-filter: none; }
+
+.boxLogo {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  display: inline-block;
+  height: 100%;
+  width: 75%;
+  position: relative; }
+
+.companyLogo {
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  margin: 0 auto 0 auto; }
+
+.boxHiring {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: right;
+  height: 60px;
+  width: 60px;
+  border: 0 none;
+  z-index: 1;
+  position: absolute; }
+
+.hiring {
+  border: 0 none;
+  background-image: url("../images/hiring.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: inline-block; }
+
+.boxBottom {
+  margin: 0;
+  padding: 0;
+  background-color: #77bdc6;
+  width: 100%;
+  height: 44px;
+  border-radius: 0 0px 8px 8px; }
+
+.companyName {
+  display: inline-block;
+  padding: 10px;
+  font-size: 15px;
+  color: #276d76; }
+
+.favorite {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 0 0 6px;
+  float: left; }
+
+.favorite:focus {
+  outline-color: transparent;
+  outline-style: none; }
+  .favorite:focus .star polygon {
+    fill: #ffd055 !important; }
+
+.stars {
+  cursor: pointer;
+  text-transform: none;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s; }
+  .stars:hover .star polygon {
+    fill: #ffd055 !important; }
+
+polygon {
+  fill: #d8d8d8; }
+
+.starss polygon {
+  fill: #ffd055 !important; }
+
+.more {
+  display: inline-block;
+  float: right;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent; }
+  .more:hover {
+    transform: translateY(-2px);
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px rgba(39, 113, 119, 0.78); }
+
+ul > li.box {
+  position: relative;
+  float: left;
+  list-style-type: none;
+  width: 50%;
+  height: 100%;
+  margin-top: 5%;
+  margin-left: 23%;
+  padding: 5px;
+  box-sizing: content-box;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition: all .2s ease-in; }
+
+ul > li.box:hover {
+  -webkit-transform: translate(0, -5px);
+  transform: translate(0, -5px);
+  background: #ECF0F1; }
+
+.info {
+  clear: both; }
+
+img.profile {
+  float: left;
+  padding: 8px;
+  margin: 3px;
+  border-radius: 10%; }
+
+h1.title {
+  font-family: helvetica, arial, sans-serif;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); }
+
+.infoDescriptionDetail {
+  margin-right: 15%;
+  margin-top: 3%; }
+
+hr {
+  margin: 2 auto;
+  width: 80%; }
+
+i.fa {
+  margin-right: 10px;
+  transition: all .5s ease; }
+
+img.detailview {
+  max-width: 180px;
+  max-height: 100px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+span.addresstwo {
+  margin-left: 24px; }
+
+.map-window {
+  width: 300px;
+  margin: 0 auto; }
+  .map-window p {
+    color: black; }
+  .map-window h1 {
+    text-align: center; }
+  .map-window i.fa {
+    margin-right: 10px;
+    transition: all .5s ease; }
+  .map-window img {
+    max-width: 180px;
+    max-height: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px; }
+  .map-window span.addresstwo {
+    margin-left: 24px; }
+  .map-window .fa-heart {
+    color: red; }
+
+.map-comp-detail {
+  margin-left: 20px; }
+
+button.btn-favorites {
+  margin-bottom: 20px;
+  display: inline-block;
+  color: black;
+  transition: all .5s ease;
+  /*   &:visited {
+    text-decoration:none;
+  }
+  &:active {
+    text-decoration:none;
+  }
+  &:hover {
+    color:black;
+    text-decoration:none;
+    transform: scale(1.2);
+  } */ }
+
+.favorites-wrapper {
+  position: fixed;
+  top: 160px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 4px;
+  padding: 10px;
+  padding-bottom: 0px;
+  z-index: 100000; }
+
+.view-animate.ng-enter, .view-animate.ng-leave {
+  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
+  display: block;
+  width: 100%;
+  position: absolute;
+  /*   top:0;
+  left:0;
+  right:0;
+  bottom:0; */
+  opacity: 0; }
+
+.view-animate.ng-enter {
+  /*   left:100%;
+   */ }
+
+.view-animate.ng-enter.ng-enter-active {
+  left: 0;
+  opacity: 1; }
+
+.view-animate.ng-leave.ng-leave-active {
+  opacity: 0; }
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s; }
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+  opacity: 0;
+  transform: translateX(2000px); }
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+  opacity: 1;
+  transform: translateX(0); }
+
+/*# sourceMappingURL=scompiled.css.map */
