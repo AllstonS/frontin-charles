@@ -3,7 +3,7 @@
   angular.module('frontin')
     .factory('CompanyService', function($http, $location) {  //check: $routeParams
 
-      var url = 'http://tiy-fee-rest.herokuapp.com/collections/frontin';
+      var url = 'http://tiny-tiny.herokuapp.com/collections/frontin';
 
       var getCompanies = function () {
         return $http.get(url);

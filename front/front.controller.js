@@ -20,7 +20,7 @@
         CompanyService.getCompanies().success(function (data) {
             compCtrl.companies = data;
             // for( var i = 0; i < data.length ; i++) {
-            //   CompanyService.getCoords(data[i]);
+              // CompanyService.getCoords(data[i]);
             //   console.log('looping ' + i);
             // }
         });
